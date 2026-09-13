@@ -186,6 +186,28 @@ scroll. It now shows the strongest 8 with a "View all 22 projects" CTA.
 
 Eight is not arbitrary — see the grid rule below.
 
+### Two lightboxes
+
+Images and films each get a full-screen `<dialog class="lightbox">`, sharing
+the same styling:
+
+- `Lightbox.astro` — project galleries. Takes a `projects` prop; full-size
+  images live in `data-src` and are only fetched when opened.
+- `Films.astro` — walkthrough films. The `<video>` element is **created on
+  open and destroyed on close or navigation**, so nothing is fetched until a
+  film is requested, and closing aborts an in-flight download rather than
+  leaving it running in the background.
+
+Two details in the film player that are easy to get wrong:
+
+- Tearing down the video clears its `<source>` children and calls `load()`.
+  Removing the node alone does not reliably abort the download.
+- Arrow keys seek inside a focused `<video>`, so film-to-film navigation only
+  claims them when the player itself is not focused.
+
+Autoplay with sound works because opening is a user gesture; if a browser
+refuses anyway, native controls are already visible.
+
 ### The grid packing rule
 
 `WorkGrid` gives every **5th** card a full-width cell (`i % 5 === 0`) in a

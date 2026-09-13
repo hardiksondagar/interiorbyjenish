@@ -3,6 +3,25 @@ import SectionHeading from './SectionHeading.astro'
 import SmartImage from './SmartImage.astro'
 import { FILM_PROJECTS } from '../data/projects'
 import { withBase } from '../lib/paths'
+import { getImage } from 'astro:assets'
+
+/** Film data for the lightbox. Poster is pre-resolved at build time so the
+ *  overlay has something to show instantly, before the video has any frames. */
+const films = await Promise.all(
+  FILM_PROJECTS.map(async (p) => {
+    const poster = await getImage({ src: p.cover.src, format: 'webp', width: 1600, quality: 72 })
+    return {
+      slug: p.slug,
+      title: p.title,
+      meta: [p.type, p.locality].filter(Boolean).join(' · '),
+      mp4: withBase(p.video!.mp4),
+      webm: p.video!.webm ? withBase(p.video!.webm) : null,
+      poster: poster.src,
+      duration: p.video!.duration,
+      href: withBase(`/work/${p.slug}/`),
+    }
+  }),
+)
 ---
 {FILM_PROJECTS.length > 0 && (
   <section id="films" class="section-y scroll-mt-20 bg-charcoal">
@@ -11,42 +30,41 @@ import { withBase } from '../lib/paths'
         dark
         eyebrow="Walkthrough Films"
         title="Walk through it before it exists."
-        lede="Full camera walkthroughs of completed projects — the same films we show clients at sign-off."
+        lede="Full camera walkthroughs of completed projects — the same films we show clients at sign-off. Tap to play full screen."
       />
 
       <div class="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:thin]">
-        {FILM_PROJECTS.map((p) => (
-          <div class="reveal w-[86vw] shrink-0 snap-start md:w-[46vw] lg:w-[38vw]">
-            <div
-              class="relative overflow-hidden bg-ink"
-              data-film
-              data-mp4={withBase(p.video!.mp4)}
-              data-webm={p.video!.webm ? withBase(p.video!.webm) : ''}
+        {FILM_PROJECTS.map((p, i) => (
+          <div class="reveal group w-[86vw] shrink-0 snap-start md:w-[46vw] lg:w-[38vw]">
+            <button
+              type="button"
+              class="block w-full cursor-pointer text-left"
+              data-open-film={String(i)}
+              aria-label={`Play the ${p.title} walkthrough film, ${p.video!.duration} seconds`}
             >
-              <SmartImage
-                image={p.cover}
-                sizes="(min-width:1024px) 38vw, (min-width:768px) 46vw, 86vw"
-                ratio="16/9"
-                class="transition-opacity duration-500"
-              />
-              <button
-                type="button"
-                data-film-play
-                class="absolute inset-0 grid place-items-center bg-ink/25 transition-colors duration-300 hover:bg-ink/10"
-                aria-label={`Play the ${p.title} walkthrough film`}
-              >
-                <span class="grid h-16 w-16 place-items-center rounded-full bg-plaster/95 text-ink transition-transform duration-300 hover:scale-110">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              <div class="relative overflow-hidden bg-ink">
+                <SmartImage
+                  image={p.cover}
+                  sizes="(min-width:1024px) 38vw, (min-width:768px) 46vw, 86vw"
+                  ratio="16/9"
+                  class="transition-transform duration-[900ms] ease-[var(--ease-out-quint)] group-hover:scale-[1.03]"
+                />
+                <span
+                  class="pointer-events-none absolute inset-0 grid place-items-center bg-ink/25 transition-colors duration-300 group-hover:bg-ink/10"
+                >
+                  <span class="grid h-16 w-16 place-items-center rounded-full bg-plaster/95 text-ink transition-transform duration-300 group-hover:scale-110">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                  </span>
                 </span>
-              </button>
-            </div>
-            <div class="mt-4 flex items-baseline justify-between gap-4">
-              <div>
-                <h3 class="text-xl text-plaster">{p.title}</h3>
-                <p class="mt-1 text-sm text-plaster/55">{p.type} · {p.locality}</p>
               </div>
-              <span class="label shrink-0 text-clay">{p.video!.duration}s</span>
-            </div>
+              <div class="mt-4 flex items-baseline justify-between gap-4">
+                <div>
+                  <h3 class="text-xl text-plaster transition-transform duration-500 group-hover:translate-x-1">{p.title}</h3>
+                  <p class="mt-1 text-sm text-plaster/55">{p.type} · {p.locality}</p>
+                </div>
+                <span class="label shrink-0 text-clay">{p.video!.duration}s</span>
+              </div>
+            </button>
           </div>
         ))}
       </div>
@@ -54,30 +72,59 @@ import { withBase } from '../lib/paths'
   </section>
 )}
 
-<script>
-  // <video> is created on click only. Nothing here is fetched on page load.
-  document.querySelectorAll<HTMLElement>('[data-film]').forEach((wrap) => {
-    const btn = wrap.querySelector<HTMLButtonElement>('[data-film-play]')
-    btn?.addEventListener('click', () => {
-      const v = document.createElement('video')
-      v.className = 'absolute inset-0 h-full w-full bg-ink object-cover'
-      v.controls = true
-      v.autoplay = true
-      v.playsInline = true
-      v.preload = 'auto'
-      for (const [type, url] of [
-        ['video/webm', wrap.dataset.webm],
-        ['video/mp4', wrap.dataset.mp4],
-      ] as const) {
-        if (!url) continue
-        const s = document.createElement('source')
-        s.type = type
-        s.src = url
-        v.appendChild(s)
-      }
-      wrap.appendChild(v)
-      btn.remove()
-      v.play().catch(() => { v.controls = true })
-    }, { once: true })
-  })
-</script>
+{FILM_PROJECTS.length > 0 && (
+  <>
+    <script type="application/json" id="film-data" set:html={JSON.stringify(films)} is:inline />
+
+    <dialog class="lightbox" data-film-lightbox aria-label="Walkthrough film">
+      <div class="flex h-full flex-col">
+        <div class="flex items-start justify-between gap-4 px-5 py-4 md:px-8">
+          <div>
+            <h2 class="text-xl text-plaster md:text-2xl" data-fl-title></h2>
+            <p class="label mt-1.5 text-plaster/55" data-fl-meta></p>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              class="label hidden rounded-full border border-plaster/25 px-4 py-2.5 text-plaster/80 transition hover:bg-plaster/10 sm:inline-block"
+              data-fl-link
+              href="#"
+            >Full project</a>
+            <button
+              type="button"
+              data-fl-close
+              class="label rounded-full border border-plaster/25 px-4 py-2.5 text-plaster transition hover:bg-plaster/10"
+              aria-label="Close film"
+            >Close</button>
+          </div>
+        </div>
+
+        <div class="relative min-h-0 flex-1" data-fl-stage>
+          {/* The <video> is injected here on open and destroyed on close, so
+              nothing is fetched until a film is actually requested. */}
+          <button
+            type="button"
+            data-fl-prev
+            class="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-charcoal/70 p-4 text-plaster transition hover:bg-charcoal"
+            aria-label="Previous film"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button
+            type="button"
+            data-fl-next
+            class="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-charcoal/70 p-4 text-plaster transition hover:bg-charcoal"
+            aria-label="Next film"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+
+        <p class="label px-5 py-4 text-center text-plaster/55 md:px-8" data-fl-counter></p>
+      </div>
+    </dialog>
+
+    <script>
+      import '../scripts/film-lightbox'
+    </script>
+  </>
+)}
