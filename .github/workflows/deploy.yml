@@ -29,13 +29,30 @@ jobs:
 
       - run: npm ci
 
+      # Astro re-encodes ~3000 responsive image variants on a cold build,
+      # which took 21 minutes in CI. Its cache (cacheDir in astro.config.mjs,
+      # deliberately outside node_modules so `npm ci` can't delete it) makes a
+      # warm build ~1 second.
+      #
+      # The key includes the image masters, so adding or recuration images
+      # produces a new key - but restore-keys falls back to the most recent
+      # cache, so only the changed images get re-encoded rather than all of
+      # them.
+      - name: Restore optimised image cache
+        uses: actions/cache@v4
+        with:
+          path: .astro-cache
+          key: astro-assets-${{ hashFiles('src/assets/projects/**/*.jpg', 'src/data/manifest.json') }}
+          restore-keys: |
+            astro-assets-
+
       # The asset pipeline is NOT run here: it needs the ~5.3 GB of raw Drive
       # exports in portfolio/, which are gitignored. Optimised images, videos
       # and the manifest are committed, so the build works from those.
       - name: Build
         run: npm run build
         env:
-          SITE_URL: https://hardiksondagar.github.io
+          SITE_URL: https://hardiksondagar.me
           BASE_PATH: /interiorbyjenish
 
       - uses: actions/configure-pages@v5

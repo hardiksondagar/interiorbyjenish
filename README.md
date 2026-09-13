@@ -231,6 +231,37 @@ Live at **https://hardiksondagar.github.io/interiorbyjenish/**
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and
 publishes to GitHub Pages. No manual step.
 
+### Build times, and why the cache matters
+
+Astro encodes ~1800 responsive image variants. Measured:
+
+| | |
+|---|---|
+| Cold build (no cache) | ~20 min |
+| Warm build (cache restored) | **0.8 s** |
+
+The variants are cached in `.astro-cache` (set via `cacheDir` in
+`astro.config.mjs`). It lives **outside `node_modules` on purpose** — the
+default location is `node_modules/.astro`, which `npm ci` deletes, so CI was
+re-encoding every image on every single deploy. That was the original 21-minute
+build.
+
+The workflow now restores that cache with `actions/cache`. The key hashes the
+image masters, and `restore-keys` falls back to the most recent cache, so
+adding or re-curating images only re-encodes the ones that changed rather than
+all of them.
+
+Two caveats worth knowing:
+
+- The **first** run after a cache change is still cold (~20 min); it populates
+  the cache at the end. Runs after that are fast.
+- GitHub evicts caches unused for 7 days, so an occasional cold build happens.
+
+If that ever becomes intolerable, the next step is moving image optimisation
+out of Astro entirely — pre-generate the responsive set in `scripts/` (which
+already uses sharp) and emit plain `<picture>` markup. CI would never touch
+images, at the cost of roughly +150 MB of committed derivatives.
+
 ### The sub-path matters
 
 This is a *project* Pages site, so it is served under `/interiorbyjenish/`

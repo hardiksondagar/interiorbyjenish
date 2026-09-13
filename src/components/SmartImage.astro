@@ -15,7 +15,11 @@ interface Props {
 const {
   image,
   sizes,
-  widths = [480, 768, 1200, 1800, 2400],
+  // Four widths, not five. These cover the real layout slots - phone (480),
+  // phone@2x and grid card (960), tablet@2x and detail page (1600), lightbox
+  // and large desktop (2400) - and every variant dropped is ~360 fewer image
+  // encodes per build.
+  widths = [480, 960, 1600, 2400],
   priority = false,
   class: cls = '',
   ratio,
@@ -32,6 +36,11 @@ if (!capped.length) capped.push(image.width)
   <Picture
     src={image.src}
     formats={['avif', 'webp']}
+    {/* Fall back to WebP rather than the source JPEG. <Picture> renders the
+        fallback format as a third full width-set, and WebP has been
+        universally supported since 2020, so the JPEG set was ~600 wasted
+        encodes per build for no browser that exists. */}
+    fallbackFormat="webp"
     widths={capped}
     sizes={sizes}
     alt={image.alt}

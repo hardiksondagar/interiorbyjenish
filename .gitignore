@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .astro/
+.astro-cache/
 .work/
 portfolio/
 # public/media/video/ is intentionally COMMITTED: GitHub Actions cannot
