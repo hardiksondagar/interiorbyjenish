@@ -52,8 +52,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          SITE_URL: https://hardiksondagar.me
-          BASE_PATH: /interiorbyjenish
+          SITE_URL: https://interiorbyjenish.com
+          BASE_PATH: /
 
       - uses: actions/configure-pages@v5
 

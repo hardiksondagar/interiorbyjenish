@@ -230,7 +230,7 @@ would mean self-hosting it, the way the Films section already does.
 
 ## Deploy
 
-Live at **https://hardiksondagar.github.io/interiorbyjenish/**
+Live at **https://interiorbyjenish.com**
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and
 publishes to GitHub Pages. No manual step.
@@ -266,33 +266,30 @@ out of Astro entirely — pre-generate the responsive set in `scripts/` (which
 already uses sharp) and emit plain `<picture>` markup. CI would never touch
 images, at the cost of roughly +150 MB of committed derivatives.
 
-### The sub-path matters
+### Paths and the base
 
-This is a *project* Pages site, so it is served under `/interiorbyjenish/`
-rather than a domain root. Two consequences:
+The site is served from **interiorbyjenish.com**, which GitHub Pages serves at
+the domain root — so `BASE_PATH` is `/` and paths are plain root-relative.
 
-1. `astro.config.mjs` sets `base`. Astro rewrites imported-asset URLs itself,
-   but **not** hardcoded strings in `src`/`href`. Everything hand-written goes
-   through `withBase()` in `src/lib/paths.ts` — if you add a literal path like
-   `/media/foo.jpg`, wrap it or it will 404 in production.
+It was briefly deployed as a project site under `/interiorbyjenish/`, and the
+machinery for that is still in place: set `BASE_PATH=/interiorbyjenish` and
+`SITE_URL=https://hardiksondagar.github.io` and it works again, no code
+changes. That's why internal paths still go through `withBase()`:
+
+1. Astro rewrites imported-asset URLs for a base, but **not** hardcoded strings
+   in `src`/`href`. Everything hand-written goes through `withBase()` in
+   `src/lib/paths.ts`. At `BASE_PATH=/` it is a no-op, so adding a literal path
+   is currently harmless — but wrap it anyway if a sub-path deploy might return.
 2. `public/.nojekyll` is **required**. Jekyll strips files and directories
    beginning with an underscore, which would delete the whole `/_astro/` bundle
    — CSS, JS and every optimised image.
+3. `public/CNAME` holds the custom domain. An Actions deploy replaces the whole
+   published site, so keeping it in the artifact stops the domain setting from
+   being dropped.
 
-`npm run dev` also serves at `/interiorbyjenish/` locally, so what you see
-matches production.
-
-### Moving to interiorbyjenish.com
-
-No code changes. Set the two env vars in the workflow and add a `CNAME`:
-
-```yaml
-env:
-  SITE_URL: https://interiorbyjenish.com
-  BASE_PATH: ''          # empty = serve at root
-```
-
-`withBase()` becomes a no-op and every path collapses back to root-relative.
+Note `public/_headers` is **inert on GitHub Pages** — it is a
+Cloudflare/Netlify format. Pages sets its own caching. It is kept for a
+possible move to Cloudflare.
 
 ### Media in git
 

@@ -2,13 +2,12 @@ import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 import sitemap from '@astrojs/sitemap'
 
-// GitHub Pages project site. The account has a custom domain
-// (hardiksondagar.me), so Pages serves project sites under that, not
-// under github.io. For a custom domain, set
-// SITE_URL=https://interiorbyjenish.com and BASE_PATH= (empty) in the
-// environment - no code changes needed.
-const SITE_URL = process.env.SITE_URL ?? 'https://hardiksondagar.me'
-const BASE_PATH = process.env.BASE_PATH ?? '/interiorbyjenish'
+// Served from the custom domain interiorbyjenish.com, which GitHub Pages
+// serves at the DOMAIN ROOT - so there is no base path. Both values are
+// env-overridable: set BASE_PATH=/interiorbyjenish to deploy back to a
+// project sub-path (e.g. hardiksondagar.github.io/interiorbyjenish/).
+const SITE_URL = process.env.SITE_URL ?? 'https://interiorbyjenish.com'
+const BASE_PATH = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
   site: SITE_URL,
