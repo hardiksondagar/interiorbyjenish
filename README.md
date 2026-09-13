@@ -226,20 +226,59 @@ would mean self-hosting it, the way the Films section already does.
 
 ## Deploy
 
-Static `dist/`, no host-specific config. `public/_headers` carries
-Cloudflare/Netlify-style cache rules.
+Live at **https://hardiksondagar.github.io/interiorbyjenish/**
 
-**Hosting is still undecided.** Videos total ~44 MB and live in
-`public/media/video/`, which is **gitignored** — they must be uploaded
-separately or the pipeline re-run on the build machine.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and
+publishes to GitHub Pages. No manual step.
 
-Recommendation: **Cloudflare Pages** — free, no hard bandwidth cap, good India
-latency. Vercel and Netlify free tiers cap at 100 GB/month, which video traffic
-can burn through.
+### The sub-path matters
 
-Do **not** use Git LFS for the media: Cloudflare Pages' git integration does
-not fetch LFS objects and would silently ship broken files. Either commit the
-images as now, or move them to R2 behind a base-URL constant.
+This is a *project* Pages site, so it is served under `/interiorbyjenish/`
+rather than a domain root. Two consequences:
+
+1. `astro.config.mjs` sets `base`. Astro rewrites imported-asset URLs itself,
+   but **not** hardcoded strings in `src`/`href`. Everything hand-written goes
+   through `withBase()` in `src/lib/paths.ts` — if you add a literal path like
+   `/media/foo.jpg`, wrap it or it will 404 in production.
+2. `public/.nojekyll` is **required**. Jekyll strips files and directories
+   beginning with an underscore, which would delete the whole `/_astro/` bundle
+   — CSS, JS and every optimised image.
+
+`npm run dev` also serves at `/interiorbyjenish/` locally, so what you see
+matches production.
+
+### Moving to interiorbyjenish.com
+
+No code changes. Set the two env vars in the workflow and add a `CNAME`:
+
+```yaml
+env:
+  SITE_URL: https://interiorbyjenish.com
+  BASE_PATH: ''          # empty = serve at root
+```
+
+`withBase()` becomes a no-op and every path collapses back to root-relative.
+
+### Media in git
+
+`public/media/video/` (~74 MB) **is committed**, which is unusual but
+necessary: CI cannot regenerate it, because the asset pipeline needs the
+~5.3 GB of raw Drive exports in `portfolio/` that aren't in the repo. With the
+47 MB of image masters the repo is ~125 MB — fine for GitHub, but it is
+permanent history.
+
+If bandwidth or repo size becomes a problem, move the videos to Cloudflare R2
+and point `manifest.json` at a CDN base; then re-ignore the directory.
+
+Do **not** use Git LFS. Cloudflare Pages' git integration does not fetch LFS
+objects, and it would silently ship broken files if you ever migrate there.
+
+### Bandwidth
+
+GitHub Pages has a soft 100 GB/month limit, same ballpark as Vercel and
+Netlify. For a portfolio this is unlikely to bite, but ~10 MB of video per
+interested visitor adds up. **Cloudflare Pages** (free, no hard cap, better
+India latency) remains the better long-term home if traffic grows.
 
 ---
 

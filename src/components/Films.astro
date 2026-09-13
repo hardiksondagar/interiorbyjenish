@@ -2,6 +2,7 @@
 import SectionHeading from './SectionHeading.astro'
 import SmartImage from './SmartImage.astro'
 import { FILM_PROJECTS } from '../data/projects'
+import { withBase } from '../lib/paths'
 ---
 {FILM_PROJECTS.length > 0 && (
   <section id="films" class="section-y scroll-mt-20 bg-charcoal">
@@ -19,8 +20,8 @@ import { FILM_PROJECTS } from '../data/projects'
             <div
               class="relative overflow-hidden bg-ink"
               data-film
-              data-mp4={p.video!.mp4}
-              data-webm={p.video!.webm ?? ''}
+              data-mp4={withBase(p.video!.mp4)}
+              data-webm={p.video!.webm ? withBase(p.video!.webm) : ''}
             >
               <SmartImage
                 image={p.cover}

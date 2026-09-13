@@ -1,13 +1,14 @@
 ---
 import Logo from './Logo.astro'
 import { SITE, waHref } from '../lib/site'
+import { withBase } from '../lib/paths'
 
 const links = [
-  { href: '/#work', label: 'Work' },
-  { href: '/#films', label: 'Films' },
-  { href: '/#process', label: 'Process' },
-  { href: '/#instagram', label: 'Instagram' },
-  { href: '/#contact', label: 'Contact' },
+  { href: withBase('/#work'), label: 'Work' },
+  { href: withBase('/#films'), label: 'Films' },
+  { href: withBase('/#process'), label: 'Process' },
+  { href: withBase('/#instagram'), label: 'Instagram' },
+  { href: withBase('/#contact'), label: 'Contact' },
 ]
 ---
 <header
@@ -17,7 +18,7 @@ const links = [
          [&.is-solid]:bg-plaster/85 [&.is-solid]:backdrop-blur-md [&.is-solid]:border-sand"
 >
   <div class="shell flex items-center justify-between py-4 md:py-5">
-    <a href="/" class="text-plaster [.is-solid_&]:text-ink transition-colors duration-500" aria-label={`${SITE.name} — home`}>
+    <a href={withBase("/")} class="text-plaster [.is-solid_&]:text-ink transition-colors duration-500" aria-label={`${SITE.name} — home`}>
       <Logo class="text-[0.95rem]" />
     </a>
 

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro'
+import { withBase } from '../lib/paths'
 ---
 <Base title="Page not found">
   <section class="shell flex min-h-[70svh] flex-col justify-center py-32">
@@ -9,7 +10,7 @@ import Base from '../layouts/Base.astro'
       The page you're after doesn't exist. The work is all on the home page.
     </p>
     <a
-      href="/"
+      href={withBase("/")}
       class="label mt-10 self-start rounded-full bg-ink px-6 py-4 text-plaster hover:bg-charcoal transition-colors duration-300"
     >Back to the work</a>
   </section>

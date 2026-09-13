@@ -3,7 +3,11 @@ dist/
 .astro/
 .work/
 portfolio/
-public/media/video/
+# public/media/video/ is intentionally COMMITTED: GitHub Actions cannot
+# regenerate it, because the asset pipeline needs the raw Drive exports in
+# portfolio/ which are not in the repo. ~74 MB.
+# If the videos later move to R2/Cloudflare, re-ignore this and point
+# manifest.json at the CDN base instead.
 .DS_Store
 *.log
 .playwright-mcp/

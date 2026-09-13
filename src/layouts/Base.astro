@@ -4,6 +4,7 @@ import { SITE } from '../lib/site'
 import Nav from '../components/Nav.astro'
 import Footer from '../components/Footer.astro'
 import WhatsAppFab from '../components/WhatsAppFab.astro'
+import { withBase } from '../lib/paths'
 
 interface Props {
   title?: string
@@ -27,7 +28,9 @@ const pageTitle = !title
     : `${title} | ${SITE.name}`
 
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://interiorbyjenish.com')
-const ogUrl = new URL(ogImage, canonical)
+// Site root including any base path, so the schema @ids are stable.
+const siteRoot = new URL(withBase('/'), canonical).href.replace(/\/$/, '')
+const ogUrl = new URL(withBase(ogImage), canonical)
 
 // schema.org has no interior-design business type. HomeAndConstructionBusiness
 // is the correct supertype; additionalType pins the actual discipline.
@@ -36,11 +39,11 @@ const jsonLd = {
   '@graph': [
     {
       '@type': ['HomeAndConstructionBusiness', 'LocalBusiness'],
-      '@id': `${canonical.origin}/#business`,
+      '@id': `${siteRoot}/#business`,
       additionalType: 'https://www.wikidata.org/wiki/Q1752209',
       name: SITE.name,
       description: SITE.description,
-      url: canonical.origin,
+      url: siteRoot,
       image: ogUrl.href,
       telephone: SITE.phoneE164,
       email: SITE.email,
@@ -63,10 +66,10 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': `${canonical.origin}/#website`,
-      url: canonical.origin,
+      '@id': `${siteRoot}/#website`,
+      url: siteRoot,
       name: SITE.name,
-      publisher: { '@id': `${canonical.origin}/#business` },
+      publisher: { '@id': `${siteRoot}/#business` },
       inLanguage: 'en-IN',
     },
   ],
@@ -93,8 +96,8 @@ const jsonLd = {
     <meta property="og:locale" content="en_IN" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+    <link rel="sitemap" href={withBase("/sitemap-index.xml")} />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
 

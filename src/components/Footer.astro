@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro'
 import { SITE, telHref, mailHref } from '../lib/site'
+import { withBase } from '../lib/paths'
 const year = new Date().getFullYear()
 ---
 <footer class="bg-ink py-14">
@@ -15,10 +16,10 @@ const year = new Date().getFullYear()
 
       <nav class="flex flex-wrap gap-x-10 gap-y-3" aria-label="Footer">
         {[
-          { href: '/#work', label: 'Work' },
-          { href: '/#films', label: 'Films' },
-          { href: '/#process', label: 'Process' },
-          { href: '/#contact', label: 'Contact' },
+          { href: withBase('/#work'), label: 'Work' },
+          { href: withBase('/#films'), label: 'Films' },
+          { href: withBase('/#process'), label: 'Process' },
+          { href: withBase('/#contact'), label: 'Contact' },
           { href: SITE.instagramUrl, label: 'Instagram', ext: true },
         ].map((l) => (
           <a

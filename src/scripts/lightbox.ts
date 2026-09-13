@@ -51,7 +51,9 @@ if (raw && dialog) {
     opener = from
     titleEl.textContent = p.title
     metaEl.textContent = p.meta
-    link.href = `/work/${p.slug}/`
+    // Vite inlines BASE_URL at build time, so this works under a sub-path.
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+    link.href = `${base}/work/${p.slug}/`
     show(0)
     dlg.showModal()
     document.body.style.overflow = 'hidden'

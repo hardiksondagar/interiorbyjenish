@@ -1,6 +1,7 @@
 ---
 import { SITE, waHref } from '../lib/site'
 import { STATS } from '../data/projects'
+import { withBase } from '../lib/paths'
 
 const words = ['Interiors', 'resolved', 'down', 'to', 'the', 'last', 'millimetre.']
 ---
@@ -9,7 +10,7 @@ const words = ['Interiors', 'resolved', 'down', 'to', 'the', 'last', 'millimetre
       Sources are attached after load by the inline script below. */}
   <video
     class="hero-media absolute inset-0 h-full w-full object-cover opacity-70"
-    poster="/media/hero-poster.jpg"
+    poster={withBase("/media/hero-poster.jpg")}
     muted
     loop
     playsinline
@@ -17,8 +18,8 @@ const words = ['Interiors', 'resolved', 'down', 'to', 'the', 'last', 'millimetre
     aria-hidden="true"
     tabindex="-1"
     data-hero-video
-    data-mp4="/media/video/hero-loop.mp4"
-    data-webm="/media/video/hero-loop.webm"
+    data-mp4={withBase("/media/video/hero-loop.mp4")}
+    data-webm={withBase("/media/video/hero-loop.webm")}
   ></video>
 
   <div
