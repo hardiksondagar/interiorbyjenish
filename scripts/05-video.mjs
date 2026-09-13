@@ -14,10 +14,31 @@ import { readJson, writeJson, ensure, exists, mb } from './lib/util.mjs'
 
 const run = promisify(execFile)
 const force = process.argv.includes('--force')
-const skipWebm = process.argv.includes('--no-webm')   // VP9 is slow; allow opting out
+// VP9 is off by default. Measured across all six films on this material it
+// never beat H.264 by the 15% needed to be worth committing - usually it came
+// out LARGER - so encoding it was minutes of work per run for files that were
+// then deleted. Pass --webm to re-test (e.g. after changing source material).
+const skipWebm = !process.argv.includes('--webm')
 
-const probe = await readJson(path.join(P.probe, 'videos.json'), [])
+let probe = await readJson(path.join(P.probe, 'videos.json'), [])
 if (!probe.length) { console.error('Run 02-probe.mjs first.'); process.exit(1) }
+
+// One film per project. Super Shaligram has both an 8s entrance clip and a
+// 6-minute walkthrough; without this, which one ends up on the site depends on
+// probe order. Longest wins, since the long one is always the real walkthrough.
+{
+  const best = new Map()
+  for (const v of probe) {
+    if (v.error) continue
+    const cur = best.get(v.slug)
+    if (!cur || (v.duration ?? 0) > (cur.duration ?? 0)) best.set(v.slug, v)
+  }
+  const dropped = probe.filter((v) => !v.error && best.get(v.slug) !== v)
+  for (const d of dropped) {
+    console.log(`  ${d.slug}: using the longer film, skipping ${path.basename(d.path)} (${Math.round(d.duration)}s)`)
+  }
+  probe = [...best.values()]
+}
 
 await ensure(P.video)
 await ensure(path.join(P.raster, '_posters'))
@@ -59,7 +80,7 @@ for (const v of probe.filter((x) => !x.error)) {
     process.stdout.write(`  ${v.slug} mp4 ... `)
     await run(BIN.ffmpeg, ['-y', ...trimArgs(t), '-i', src,
       '-vf', "scale='min(1920,iw)':-2:flags=lanczos",
-      '-c:v', 'libx264', '-preset', 'slow', '-crf', '27', '-pix_fmt', 'yuv420p',
+      '-c:v', 'libx264', '-preset', 'slow', '-crf', '30', '-pix_fmt', 'yuv420p',
       '-profile:v', 'high', '-level', '4.0', '-g', '60',
       '-movflags', '+faststart',
       ...(v.hasAudio ? ['-c:a', 'aac', '-b:a', '128k', '-ac', '2'] : ['-an']),
@@ -72,7 +93,7 @@ for (const v of probe.filter((x) => !x.error)) {
     process.stdout.write(`  ${v.slug} webm ... `)
     await run(BIN.ffmpeg, ['-y', ...trimArgs(t), '-i', src,
       '-vf', "scale='min(1920,iw)':-2",
-      '-c:v', 'libvpx-vp9', '-crf', '34', '-b:v', '0',
+      '-c:v', 'libvpx-vp9', '-crf', '37', '-b:v', '0',
       '-row-mt', '1', '-cpu-used', '3', '-tile-columns', '2',
       ...(v.hasAudio ? ['-c:a', 'libopus', '-b:a', '96k'] : ['-an']),
       webm], { maxBuffer: 1 << 26 })
@@ -148,13 +169,17 @@ for (const v of probe.filter((x) => !x.error)) {
     }
   }
 
-  // Drop a WebM that lost to H.264 on size - it would otherwise be served
-  // preferentially and cost more bytes than the MP4 it replaces.
+  // Keep a WebM only when it is meaningfully smaller than the MP4. VP9 came
+  // out barely smaller on this material (0.1-1.1 MB) while every kept file
+  // adds its full size to the repo forever, so a marginal win is not worth
+  // it. <source> order serves WebM first, so a non-win would also mean
+  // capable browsers download the worse file.
+  const WEBM_MIN_SAVING = 0.15
   if (await exists(webm)) {
     const [wb, mb4] = [(await fsp.stat(webm)).size, (await fsp.stat(mp4)).size]
-    if (wb >= mb4) {
+    if (wb > mb4 * (1 - WEBM_MIN_SAVING)) {
       await fsp.unlink(webm)
-      console.log(`  ${v.slug}: webm (${mb(wb)}) >= mp4 (${mb(mb4)}), dropped`)
+      console.log(`  ${v.slug}: webm ${mb(wb)} vs mp4 ${mb(mb4)} - under ${WEBM_MIN_SAVING * 100}% saving, dropped`)
     }
   }
 

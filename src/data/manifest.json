@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T06:18:33.180Z",
+  "generatedAt": "2026-09-13T11:51:05.943Z",
   "curated": false,
   "projects": {
     "anusthan-bungalow": {
@@ -99,7 +99,7 @@
       ],
       "video": {
         "mp4": "/media/video/anusthan-bungalow-1080.mp4",
-        "webm": "/media/video/anusthan-bungalow-1080.webm",
+        "webm": null,
         "duration": 34,
         "aspect": 1.778
       }
@@ -298,7 +298,7 @@
       ],
       "video": {
         "mp4": "/media/video/amogha-shantigram-1080.mp4",
-        "webm": "/media/video/amogha-shantigram-1080.webm",
+        "webm": null,
         "duration": 34,
         "aspect": 1.778
       }
@@ -1964,8 +1964,8 @@
       ],
       "video": {
         "mp4": "/media/video/super-shaligram-1080.mp4",
-        "webm": "/media/video/super-shaligram-1080.webm",
-        "duration": 8,
+        "webm": null,
+        "duration": 45,
         "aspect": 1.778
       }
     },
@@ -1986,7 +1986,7 @@
       ],
       "video": {
         "mp4": "/media/video/anusthan-harmony-1080.mp4",
-        "webm": "/media/video/anusthan-harmony-1080.webm",
+        "webm": null,
         "duration": 34,
         "aspect": 1.778
       }

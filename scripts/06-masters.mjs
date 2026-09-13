@@ -16,6 +16,7 @@ import os from 'node:os'
 import sharp from 'sharp'
 import { P } from './lib/paths.mjs'
 import { LOW_RES_EXCLUDE } from './lib/video-trims.mjs'
+import { REGISTRY } from './lib/registry.mjs'
 import { readJson, writeJson, ensure, exists } from './lib/util.mjs'
 
 const force = process.argv.includes('--force')
@@ -124,6 +125,17 @@ for (const p of [...cand.projects, ...videoOnly]) {
       : null,
   }
   report.push({ slug: p.slug, n: gallery.length, source, video: !!manifest.projects[p.slug].video })
+}
+
+// Guard against a stale exclusion: these are public slugs, so a rename in
+// registry.mjs can silently orphan one (it happened with karnavati-7).
+{
+  const known = new Set(Object.values(REGISTRY).map((m) => m.slug))
+  const orphans = [...LOW_RES_EXCLUDE].filter((s) => !known.has(s))
+  if (orphans.length) {
+    console.log(`\n  WARNING LOW_RES_EXCLUDE names slugs that no longer exist: ${orphans.join(', ')}`)
+    console.log('  Update scripts/lib/video-trims.mjs - the exclusion is not taking effect.')
+  }
 }
 
 await writeJson(P.manifest, manifest)

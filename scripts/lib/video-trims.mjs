@@ -17,7 +17,12 @@ export const TRIMS = {
   'dhaval-residence':    { start: 62, duration: 34 },
   'auntynoz-pizza':      { start: 2,  duration: 32 },
   'vishwakarma-furniture': { start: 5, duration: 34 },
-  // super-shaligram is 8s and karnavati-7-101-104 is 6s: encode whole.
+  // A-1302 walkthrough: 6m01s of 4K at 41 Mbps. The whole thing is usable
+  // interior footage, so this just takes the opening stretch - living room
+  // through kitchen and dining. Given a little more than the others (45s vs
+  // 34s) because it is the strongest film in the set.
+  'super-shaligram':     { start: 8,  duration: 45 },
+  // karnavati-7-101-104 is 6s: encode whole.
 }
 
 /** Source for the silent looping hero background.
@@ -29,4 +34,8 @@ export const HERO = { slug: 'anusthan-harmony', start: 50, duration: 12 }
 
 /** Videos too low-resolution to show full-width. vishwakarma-furniture is
  *  640x352 (a screen recording), so it is excluded from the film strip. */
-export const LOW_RES_EXCLUDE = new Set(['vishwakarma-furniture', 'karnavati-7-101-104'])
+/** Videos too low-resolution to show in the film strip. These are PUBLIC
+ *  slugs, so they must track renames in registry.mjs - 'karnavati-7-101-104'
+ *  was renamed to 'karnavati-7' when unit numbers were dropped from titles,
+ *  which silently un-excluded its 6s 874x826 WhatsApp clip. */
+export const LOW_RES_EXCLUDE = new Set(['vishwakarma-furniture', 'karnavati-7'])

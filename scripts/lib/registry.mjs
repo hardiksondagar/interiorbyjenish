@@ -121,6 +121,12 @@ export const LOOSE_MAP = {
   'dhavalbhai.m4v': 'dhavalbhai',
   'jay-vishwakarma-furniture.mp4': 'jay-vishwakarma-furniture',
   'our-portfolio-ibj.pdf': '_lookbook',
+  // Added later, loose at the portfolio root. The Adani Shantigram and
+  // Anusthan Harmony files are byte-identical to copies already nested in the
+  // tree, so SHA-256 dedupe drops them - they are mapped only so they don't
+  // show up as "unmapped" warnings.
+  'adani-shantigram.mp4': 'amogha-adani-shantigram',
+  'a-1302-super-shaligram.mp4': 'super-shaligram',
 }
 
 /** Folders with nothing usable in them. */
