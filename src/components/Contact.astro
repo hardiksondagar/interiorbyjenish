@@ -1,5 +1,5 @@
 ---
-import { SITE, waHref, telHref, mailHref } from '../lib/site'
+import { SITE, waHref, telHref, mailHref, mapHref } from '../lib/site'
 ---
 <section id="contact" class="section-y scroll-mt-20 bg-charcoal">
   <div class="shell">
@@ -38,7 +38,18 @@ import { SITE, waHref, telHref, mailHref } from '../lib/site'
       <dl class="lg:col-span-5 lg:border-l lg:border-plaster/15 lg:pl-12 space-y-8">
         <div>
           <dt class="label text-plaster/45">Studio</dt>
-          <dd class="mt-2.5 text-plaster">{SITE.addressLine}</dd>
+          <dd class="mt-2.5">
+            <a
+              href={mapHref}
+              target="_blank"
+              rel="noopener"
+              class="text-plaster underline decoration-plaster/30 decoration-1 underline-offset-4 transition hover:decoration-plaster"
+            >
+              3 Sharnam Arise, Opp Nakshtra Aspire,<br />
+              Pooja Farm Road, New Narol,<br />
+              {SITE.city} {SITE.postalCode}
+            </a>
+          </dd>
         </div>
         <div>
           <dt class="label text-plaster/45">Service areas</dt>

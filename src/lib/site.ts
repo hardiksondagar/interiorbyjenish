@@ -1,6 +1,4 @@
-/** Single source of truth for every business detail.
- *  TODO placeholders are deliberately obvious so nothing ships looking
- *  real-but-wrong. Replace all four TODO lines before going live. */
+/** Single source of truth for every business detail. */
 export const SITE = {
   name: 'Interior by Jenish',
   shortName: 'IBJ',
@@ -10,10 +8,16 @@ export const SITE = {
   description:
     'Interior by Jenish designs and delivers turnkey interiors for homes and offices across Ahmedabad — from modular kitchens and wardrobes to complete office fit-outs, resolved in full 3D before work begins.',
 
-  phoneE164: '+910000000000',        // TODO: Jenish
-  phoneDisplay: '+91 00000 00000',   // TODO: Jenish
-  email: 'hello@interiorbyjenish.com', // TODO: Jenish
-  addressLine: 'Ahmedabad, Gujarat', // TODO: street address for Google
+  phoneE164: '+919099602735',
+  phoneDisplay: '+91 90996 02735',
+  email: 'interiorbyjenish@gmail.com',
+
+  /** Street address, split for schema.org PostalAddress. New Narol is the
+   *  area; Ahmedabad is the city it sits in. */
+  street: '3 Sharnam Arise, Opp Nakshtra Aspire, Pooja Farm Road, New Narol',
+  postalCode: '382405',
+  /** Single-line form, used in the UI. */
+  addressLine: '3 Sharnam Arise, Opp Nakshtra Aspire, Pooja Farm Road, New Narol, Ahmedabad 382405',
 
   instagramHandle: 'interiorbyjenish',
   instagramUrl: 'https://www.instagram.com/interiorbyjenish',
@@ -21,7 +25,10 @@ export const SITE = {
   city: 'Ahmedabad',
   region: 'Gujarat',
   country: 'IN',
-  geo: { lat: 23.0225, lng: 72.5714 },
+  /** Approximate - New Narol, south Ahmedabad. Replace with the exact pin
+   *  from Google Maps so the LocalBusiness schema points at the studio
+   *  rather than the neighbourhood. */
+  geo: { lat: 22.9564, lng: 72.6042 },
   serviceAreas: ['Ahmedabad', 'Gandhinagar', 'Jaipur'],
 
   /** Client personal names appear in the source folders (Bipinbhai,
@@ -42,5 +49,8 @@ export function waHref(
 export const telHref = `tel:${SITE.phoneE164}`
 export const mailHref = `mailto:${SITE.email}`
 
-/** Loud warning at build time if the placeholders are still in place. */
-export const HAS_PLACEHOLDER_CONTACT = /0{6,}/.test(SITE.phoneE164)
+/** Google Maps search for the studio address. */
+export const mapHref =
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${SITE.street}, ${SITE.city}, ${SITE.region} ${SITE.postalCode}`,
+  )}`

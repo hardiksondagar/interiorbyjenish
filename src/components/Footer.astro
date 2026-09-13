@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro'
-import { SITE, telHref, mailHref } from '../lib/site'
+import { SITE, telHref, mailHref, mapHref } from '../lib/site'
 import { withBase } from '../lib/paths'
 const year = new Date().getFullYear()
 ---
@@ -34,6 +34,12 @@ const year = new Date().getFullYear()
       <div class="space-y-2">
         <a href={telHref} class="block text-sm text-plaster/70 hover:text-plaster transition">{SITE.phoneDisplay}</a>
         <a href={mailHref} class="block text-sm text-plaster/70 hover:text-plaster transition">{SITE.email}</a>
+        <a
+          href={mapHref}
+          target="_blank"
+          rel="noopener"
+          class="block max-w-[26ch] text-sm leading-relaxed text-plaster/55 hover:text-plaster transition"
+        >New Narol, {SITE.city} {SITE.postalCode}</a>
       </div>
     </div>
 

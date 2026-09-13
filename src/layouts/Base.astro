@@ -50,8 +50,10 @@ const jsonLd = {
       priceRange: '₹₹',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: SITE.street,
         addressLocality: SITE.city,
         addressRegion: SITE.region,
+        postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
       geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },

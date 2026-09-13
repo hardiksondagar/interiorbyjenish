@@ -19,23 +19,27 @@ npm run build        # -> dist/
 npm run preview
 ```
 
-## Before this goes live
+## Business details
 
-Four placeholders, all in **`src/lib/site.ts`**:
+All in **`src/lib/site.ts`** — one file feeds the WhatsApp deep links, `tel:`
+and `mailto:` links, the Google Maps link and the LocalBusiness schema:
 
-```ts
-phoneE164:   '+910000000000'          // -> real number, E.164
-phoneDisplay:'+91 00000 00000'        // -> how it should read on screen
-email:       'hello@interiorbyjenish.com'
-addressLine: 'Ahmedabad, Gujarat'     // -> street address, for Google
+```
++91 90996 02735
+interiorbyjenish@gmail.com
+3 Sharnam Arise, Opp Nakshtra Aspire, Pooja Farm Road,
+New Narol, Ahmedabad 382405
+@interiorbyjenish
 ```
 
-They are deliberately obvious so nothing ships looking real-but-wrong. The
-number feeds the WhatsApp deep links, the `tel:` links and the LocalBusiness
-schema, so it only needs changing in that one file.
+Two things there still worth a look:
 
-Then add ~6 Instagram post links to **`src/data/instagram.ts`**. Until they're
-there, the Instagram section renders a "setup needed" card instead of embeds.
+- **`geo` is approximate** (22.9564, 72.6042 — New Narol, not the building).
+  Replace it with the exact pin from Google Maps so the schema points at the
+  studio rather than the neighbourhood.
+- The address says **"Nakshtra Aspire"** as supplied. If the scheme is actually
+  spelled *Nakshatra*, fix it in `site.ts` — it's a landmark people navigate
+  by, and it feeds the Maps link.
 
 ---
 
@@ -315,9 +319,9 @@ India latency) remains the better long-term home if traffic grows.
 
 ## Still outstanding
 
-1. **Contact details** — the four placeholders above.
-2. **Instagram post links** — 6 permalinks for `src/data/instagram.ts`.
-3. **Client names** — publish them, or keep building/locality titles?
+1. **Google Business Profile** — for a local interior firm this outranks
+   anything on-site. Claim it and point its website field at the live URL.
+2. **Client names** — publish them, or keep building/locality titles?
 4. **Testimonials** — `SITE.showTestimonials` is `false`; needs 2–3 real quotes.
 5. **Stats** — the hero counts projects and films from the manifest. Years in
    business and total square footage would be stronger, if known.
