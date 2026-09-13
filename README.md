@@ -61,12 +61,34 @@ bash scripts/run-all.sh --force   # re-encode everything
 | 02 | `02-probe.mjs` | `ffprobe` every video, `pdfinfo` every PDF. Answers video orientation and PDF page counts before anything expensive runs. |
 | 03 | `03-raster.mjs` | `pdftoppm` each PDF to 2560px PNGs. **This is what makes the office projects showable at all** — Aegis Steel Cast and Office 434 exist only as PDF. |
 | 04 | `04-previews.mjs` | 1400px JPEG preview of every candidate + `CURATION.md`. Flags likely non-renders and clusters near-duplicates by perceptual hash. |
-| 05 | `05-video.mjs` | 1080p H.264 MP4 + VP9 WebM + a scored poster frame, plus the silent hero loop. Outputs to `public/media/video/` (gitignored). |
+| 05 | `05-video.mjs` | 1080p H.264 at CRF 30 + a scored poster frame, plus the silent hero loop. One film per project (the longest). Trims in `scripts/lib/video-trims.mjs`. |
 | 06 | `06-masters.mjs` | Promotes the curated picks to 2400px JPEG masters in `src/assets/projects/` and writes `src/data/manifest.json` with dimensions and LQIP. |
 | 07 | `07-og.mjs` | One 1200×630 Open Graph card per project. |
 
 Re-running is safe: each stage skips work whose output already exists, and
 nothing overwrites `curation.json`.
+
+### Video settings, and why VP9 is off
+
+Films are 1080p H.264 at **CRF 30**, trimmed to ~35-45s. They are click-to-play
+with `preload="none"`, so length only costs bandwidth when someone watches.
+Current set: 5 films, **41 MB committed**.
+
+**VP9/WebM is off by default** (`--webm` re-enables it). Measured across all
+six encodes on this material, VP9 never beat H.264 by the 15% needed to justify
+committing a second copy — and on four it came out *larger*, which is worse
+than useless since `<source>` order serves WebM first. The hero loop is the one
+real win (1.0 MB → 0.6 MB) and is still kept, because the 15%-saving rule in
+`05-video.mjs` decides per file rather than globally.
+
+**One film per project**: `05-video.mjs` keeps the longest video per slug. Super
+Shaligram has both an 8-second entrance clip and a 6-minute walkthrough, and
+without this rule which one shipped depended on probe order.
+
+`LOW_RES_EXCLUDE` in `video-trims.mjs` holds **public slugs**, so it has to
+track renames in `registry.mjs`. It silently broke once when
+`karnavati-7-101-104` became `karnavati-7`. `06-masters.mjs` now warns if it
+names a slug that no longer exists.
 
 ### When a new Drive export arrives
 

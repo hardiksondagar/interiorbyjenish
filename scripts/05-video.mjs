@@ -9,7 +9,7 @@ import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import sharp from 'sharp'
 import { P, BIN } from './lib/paths.mjs'
-import { TRIMS, HERO } from './lib/video-trims.mjs'
+import { TRIMS, HERO, LOW_RES_EXCLUDE } from './lib/video-trims.mjs'
 import { readJson, writeJson, ensure, exists, mb } from './lib/util.mjs'
 
 const run = promisify(execFile)
@@ -33,6 +33,9 @@ if (!probe.length) { console.error('Run 02-probe.mjs first.'); process.exit(1) }
     const cur = best.get(v.slug)
     if (!cur || (v.duration ?? 0) > (cur.duration ?? 0)) best.set(v.slug, v)
   }
+  // Don't encode films the site will never reference - they'd just be dead
+  // weight in the repo.
+  for (const slug of LOW_RES_EXCLUDE) best.delete(slug)
   const dropped = probe.filter((v) => !v.error && best.get(v.slug) !== v)
   for (const d of dropped) {
     console.log(`  ${d.slug}: using the longer film, skipping ${path.basename(d.path)} (${Math.round(d.duration)}s)`)
