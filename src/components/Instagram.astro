@@ -3,7 +3,23 @@ import SectionHeading from './SectionHeading.astro'
 import { SITE } from '../lib/site'
 import { INSTAGRAM_POSTS, INSTAGRAM_LIMIT } from '../data/instagram'
 
-const posts = INSTAGRAM_POSTS.slice(0, INSTAGRAM_LIMIT)
+const posts = INSTAGRAM_POSTS
+  .slice(0, INSTAGRAM_LIMIT)
+  .map((url) => {
+    const clean = url.split('?')[0].replace(/\/?$/, '/')
+    return { permalink: clean, embed: `${clean}embed/` }
+  })
+
+/** Measured against the live embed at 300px, 409px and 560px wide:
+ *  Instagram's header is a constant 54px tall at every width, and the cover
+ *  media is always exactly width x 1.25 (a 4:5 box). So the media can be
+ *  isolated by pulling the iframe up by the header height inside an
+ *  overflow-hidden 4:5 window - everything below the cover (icons, caption,
+ *  timestamp) falls outside and is clipped.
+ *
+ *  The iframe internals are cross-origin, so this crop is the only way to
+ *  remove that chrome; it cannot be styled directly. */
+const HEADER_PX = 54
 ---
 <section id="instagram" class="section-y scroll-mt-20 bg-shell border-y border-sand">
   <div class="shell">
@@ -26,33 +42,47 @@ const posts = INSTAGRAM_POSTS.slice(0, INSTAGRAM_LIMIT)
         data-instagram
         class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {posts.map((url) => (
-          <div class="relative min-h-[420px] overflow-hidden border border-sand bg-plaster">
-            {/* Skeleton sits behind the embed so the iframe resizing can't
-                shift layout. */}
-            <div class="absolute inset-0 grid place-items-center" aria-hidden="true">
-              <span class="label text-muted/60">Loading post…</span>
-            </div>
-            <blockquote
-              class="instagram-media relative"
-              data-instgrm-permalink={`${url.replace(/\/?$/, '/')}?utm_source=ig_embed`}
-              data-instgrm-version="14"
-              style="margin:0;width:100%;min-width:0;max-width:100%;background:transparent;border:0;box-shadow:none;"
+        {posts.map((p) => (
+          <figure class="group reveal">
+            <div
+              class="relative overflow-hidden bg-sand"
+              style="aspect-ratio: 4 / 5;"
             >
-              <a href={url} target="_blank" rel="noopener" class="block p-6 text-sm text-muted">
-                View this post on Instagram
+              {/* Skeleton sits behind the iframe, so the load can't shift layout. */}
+              <div class="absolute inset-0 grid place-items-center" aria-hidden="true">
+                <span class="label text-muted/50">Loading…</span>
+              </div>
+              <iframe
+                data-ig-src={p.embed}
+                title="Instagram post by Interior by Jenish"
+                loading="lazy"
+                class="absolute left-0 w-full border-0"
+                style={`top:-${HEADER_PX}px; height:calc(100% + ${HEADER_PX}px + 320px);`}
+              ></iframe>
+            </div>
+            <figcaption class="mt-3">
+              <a
+                href={p.permalink}
+                target="_blank"
+                rel="noopener"
+                class="label inline-flex items-center gap-1.5 text-muted transition-colors duration-300 hover:text-terracotta-ink"
+              >
+                View on Instagram
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                </svg>
               </a>
-            </blockquote>
-          </div>
+            </figcaption>
+          </figure>
         ))}
       </div>
     ) : (
       <div class="reveal mt-12 border border-dashed border-clay bg-plaster p-8 md:p-12">
         <p class="label text-terracotta-ink">Setup needed</p>
         <p class="mt-4 max-w-[58ch] text-muted">
-          No posts are pinned yet. Add 6 post links to
+          No posts are pinned yet. Add post links to
           <code class="mx-1 rounded bg-sand px-1.5 py-0.5 text-sm text-ink">src/data/instagram.ts</code>
-          and they'll appear here as live embeds.
+          and they'll appear here.
         </p>
         <a
           href={SITE.instagramUrl}
@@ -66,28 +96,32 @@ const posts = INSTAGRAM_POSTS.slice(0, INSTAGRAM_LIMIT)
 </section>
 
 <script>
-  /** Instagram's embed.js plus one iframe per post is 1.5-3 MB of
-   *  third-party payload. It is deliberately NOT in the document: the script
-   *  and the preconnect are both injected only once the section is near the
-   *  viewport, so it can never affect initial load or LCP. */
+  /** Direct /embed/ iframes, deliberately without Instagram's embed.js.
+   *
+   *  embed.js would rewrite these nodes and set its own inline height, which
+   *  fights the crop - and it costs 1.5-3 MB of third-party JS for nothing we
+   *  need, since we size the iframes ourselves.
+   *
+   *  src is held in data-ig-src so not a single Instagram request fires until
+   *  the section is near the viewport. */
   const section = document.querySelector<HTMLElement>('[data-instagram]')
   if (section) {
-    let loaded = false
-    const io = new IntersectionObserver((entries) => {
-      if (!entries.some((e) => e.isIntersecting) || loaded) return
-      loaded = true
-      io.disconnect()
-
+    const frames = Array.from(section.querySelectorAll<HTMLIFrameElement>('iframe[data-ig-src]'))
+    let armed = false
+    const mount = () => {
+      if (armed) return
+      armed = true
       const pre = document.createElement('link')
       pre.rel = 'preconnect'
       pre.href = 'https://www.instagram.com'
       document.head.appendChild(pre)
-
-      const s = document.createElement('script')
-      s.async = true
-      s.src = 'https://www.instagram.com/embed.js'
-      s.onload = () => (window as any).instgrm?.Embeds?.process?.()
-      document.body.appendChild(s)
+      for (const f of frames) {
+        f.src = f.dataset.igSrc!
+        f.removeAttribute('data-ig-src')
+      }
+    }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); mount() }
     }, { rootMargin: '600px' })
     io.observe(section)
   }

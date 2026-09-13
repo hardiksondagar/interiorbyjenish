@@ -196,11 +196,31 @@ Verified on the built output:
   `navigator.connection.saveData`.
 - Lightbox images are `data-src` only; nothing is fetched until it opens.
 - Film `<video>` elements are created on click.
-- **Instagram's `embed.js` is not in the document.** It and its `preconnect`
-  are injected only when the section crosses a 600px IntersectionObserver
-  margin — it's 1.5–3 MB of third-party payload and must never touch initial
-  load. `SITE.instagramMode` is reserved as a facade escape hatch if it proves
-  too costly.
+- **Instagram's `embed.js` is not used at all.** The section renders
+  Instagram's official `/embed/` iframes directly, with `src` held in
+  `data-ig-src` until the section crosses a 600px IntersectionObserver margin.
+  Verified: zero Instagram requests on load, and `embed.js` never loads.
+
+### Why the Instagram cards are cropped
+
+Instagram's embed ships its own UI — profile header, "View profile" button,
+like/comment icons, caption, music credit, timestamp — and it is all inside a
+cross-origin iframe, so it cannot be styled.
+
+It can, however, be masked. Measured against the live embed at 300px, 409px and
+560px wide, the geometry is stable: **the header is a constant 54px at every
+width, and the cover media is always exactly `width × 1.25`** (a 4:5 box). So
+the iframe sits in an `overflow:hidden` 4:5 window, pulled up by 54px; the cover
+fills the window exactly and everything below it is clipped. A hand-styled
+"View on Instagram" link replaces Instagram's own footer.
+
+`embed.js` had to go for this to work — it rewrites the iframe and sets its own
+inline height, which fights the crop.
+
+**Reels cannot play inline in an Instagram embed.** That is a platform
+restriction; the iframe only ever shows a cover frame overlaid with "Watch on
+Instagram", and clicking it opens instagram.com. Playing video in the page
+would mean self-hosting it, the way the Films section already does.
 
 ---
 
