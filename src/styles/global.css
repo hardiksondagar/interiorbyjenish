@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+@import '@fontsource-variable/fraunces/index.css';
+@import '@fontsource-variable/inter-tight/index.css';
+@import '@fontsource/dm-mono/400.css';
+
+/* ------------------------------------------------------------------ theme
+   Palette derived from the actual brand assets, not invented: the logo on
+   the project title slides samples to #074267 (blue) and #AC2703
+   (terracotta) across 62k/126k pixels. The warm neutrals come from the
+   renders themselves - plaster walls, walnut veneer, marble, warm cove LED.
+   No pure white, no pure black, and blue used only as an accent.
+------------------------------------------------------------------------- */
+@theme {
+  --color-ink:            #1C1A17;
+  --color-charcoal:       #262320;
+  --color-plaster:        #F5F1EA;
+  --color-shell:          #FDFCFA;
+  --color-sand:           #E7DFD2;
+  --color-clay:           #C4AB8E;
+  --color-muted:          #6B6358;
+
+  /* brand */
+  --color-brand:          #074267;
+  --color-brand-soft:     #1B5D87;
+  --color-terracotta:     #AC2703;
+  --color-terracotta-ink: #8E2003;   /* small text on plaster: ~6.4:1 */
+
+  --font-display: 'Fraunces Variable', 'Fraunces', ui-serif, Georgia, serif;
+  --font-sans:    'Inter Tight Variable', 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'DM Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --text-display-xl: clamp(2.75rem, 7vw, 6.25rem);
+  --text-display-l:  clamp(2rem, 4.6vw, 3.75rem);
+  --text-display-m:  clamp(1.75rem, 3vw, 2.75rem);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ------------------------------------------------------------------ base */
+@layer base {
+  :root { color-scheme: light; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--color-plaster);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .display {
+    font-family: var(--font-display);
+    /* Fontsource's default entrypoint ships Fraunces' wght-only build (36 KB
+       latin). The opsz/SOFT/WONK axes need the full build at 118 KB, which is
+       not worth 82 KB on the critical path for a subtle optical-size shift -
+       so weight is the only axis driven here, and no variation-settings
+       declaration is made that the loaded font cannot honour. */
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+    font-weight: 350;
+    text-wrap: balance;
+  }
+
+  ::selection { background: var(--color-terracotta); color: var(--color-shell); }
+
+  :focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  img, video { display: block; max-width: 100%; height: auto; }
+}
+
+/* ------------------------------------------------------------- utilities */
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+
+@utility shell {
+  width: 100%;
+  max-width: 88rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 4rem);
+}
+
+@utility section-y {
+  padding-block: clamp(4rem, 9vw, 8.5rem);
+}
+
+/* ------------------------------------------------------------------ grain
+   One inline SVG turbulence layer over the whole page. This single rule does
+   more for the "plaster, not dashboard" feel than any animation, and costs
+   zero requests and zero JS. */
+@layer components {
+  .grain::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* hairline rule that draws in on reveal */
+  .rule {
+    height: 1px;
+    background: var(--color-sand);
+    transform-origin: left;
+  }
+}
+
+/* ------------------------------------------------------------------ motion
+   Every animation below is opt-in via .reveal and is disabled wholesale under
+   prefers-reduced-motion. Elements are visible by default and only hidden
+   once JS confirms motion is allowed, so no-JS users never see a blank page. */
+@layer components {
+  .reveal { opacity: 1; }
+
+  html.motion-ok .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.9s var(--ease-out-quint) var(--reveal-delay, 0s),
+      transform 0.9s var(--ease-out-quint) var(--reveal-delay, 0s);
+  }
+  html.motion-ok .reveal.is-visible { opacity: 1; transform: none; }
+
+  /* Image mask-up: the picture slides out from behind a clipped frame.
+     The clip is applied to the CHILD, never to .reveal-img itself. A
+     clip-path of inset(0 0 100% 0) collapses the element's intersection
+     rectangle to zero height, so IntersectionObserver would never report it
+     as intersecting and it could never be revealed. Observing the unclipped
+     wrapper and clipping its first child avoids that deadlock. */
+  html.motion-ok .reveal-img > :first-child {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1.1s var(--ease-out-quint) var(--reveal-delay, 0s);
+  }
+  html.motion-ok .reveal-img.is-visible > :first-child { clip-path: inset(0 0 0 0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.motion-ok .reveal,
+    html.motion-ok .reveal-img,
+    html.motion-ok .reveal-img > :first-child {
+      opacity: 1 !important;
+      transform: none !important;
+      clip-path: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* hero: slow ken-burns on the looping film */
+@keyframes ibj-drift {
+  from { transform: scale(1.02); }
+  to   { transform: scale(1.12); }
+}
+.hero-media { animation: ibj-drift 26s var(--ease-out-quint) infinite alternate; }
+
+/* hero headline: per-word rise, staggered by inline --i */
+@keyframes ibj-rise {
+  from { opacity: 0; transform: translateY(0.5em); }
+  to   { opacity: 1; transform: none; }
+}
+.rise > span {
+  display: inline-block;
+  animation: ibj-rise 1s var(--ease-out-quint) both;
+  animation-delay: calc(var(--i, 0) * 80ms + 120ms);
+}
+
+/* marquee */
+@keyframes ibj-marquee { to { transform: translateX(-50%); } }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: ibj-marquee 42s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-media, .marquee-track { animation: none !important; }
+  .rise > span { animation: none !important; opacity: 1; transform: none; }
+}
+
+/* lightbox */
+dialog.lightbox {
+  padding: 0;
+  border: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100dvh;
+  background: color-mix(in srgb, var(--color-charcoal) 96%, transparent);
+}
+dialog.lightbox::backdrop { background: color-mix(in srgb, var(--color-charcoal) 88%, transparent); }

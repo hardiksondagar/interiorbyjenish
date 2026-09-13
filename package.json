@@ -1,0 +1,38 @@
+{
+  "name": "ibj-portfolio",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "assets": "bash scripts/run-all.sh",
+    "assets:extract": "node scripts/01-ingest.mjs",
+    "assets:probe": "node scripts/02-probe.mjs",
+    "assets:raster": "node scripts/03-raster.mjs",
+    "assets:images": "node scripts/04-images.mjs",
+    "assets:video": "node scripts/05-video.mjs",
+    "assets:manifest": "node scripts/06-manifest.mjs",
+    "assets:og": "node scripts/07-og.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/inter-tight": "^5.3.0",
+    "@fontsource/dm-mono": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.2",
+    "motion": "^13.2.0",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

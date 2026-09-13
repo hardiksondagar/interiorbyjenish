@@ -1,0 +1,60 @@
+---
+import Logo from './Logo.astro'
+import { SITE, waHref } from '../lib/site'
+
+const links = [
+  { href: '/#work', label: 'Work' },
+  { href: '/#films', label: 'Films' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#instagram', label: 'Instagram' },
+  { href: '/#contact', label: 'Contact' },
+]
+---
+<header
+  data-nav
+  class="fixed inset-x-0 top-0 z-50 transition-[background-color,backdrop-filter,border-color] duration-500
+         border-b border-transparent
+         [&.is-solid]:bg-plaster/85 [&.is-solid]:backdrop-blur-md [&.is-solid]:border-sand"
+>
+  <div class="shell flex items-center justify-between py-4 md:py-5">
+    <a href="/" class="text-plaster [.is-solid_&]:text-ink transition-colors duration-500" aria-label={`${SITE.name} — home`}>
+      <Logo class="text-[0.95rem]" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class="label text-plaster/80 hover:text-plaster [.is-solid_&]:text-muted [.is-solid_&]:hover:text-ink transition-colors duration-300"
+        >{l.label}</a>
+      ))}
+      <a
+        href={waHref()}
+        target="_blank"
+        rel="noopener"
+        class="label rounded-full bg-terracotta px-4 py-2.5 text-shell hover:bg-terracotta-ink transition-colors duration-300"
+      >WhatsApp</a>
+    </nav>
+
+    <button
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      class="md:hidden label text-plaster [.is-solid_&]:text-ink px-2 py-2"
+    >Menu</button>
+  </div>
+
+  <div id="mobile-menu" data-menu class="hidden md:hidden bg-plaster border-t border-sand">
+    <nav class="shell flex flex-col py-4" aria-label="Mobile">
+      {links.map((l) => (
+        <a href={l.href} class="py-3 font-display text-2xl text-ink border-b border-sand/70 last:border-0">{l.label}</a>
+      ))}
+      <a
+        href={waHref()}
+        target="_blank"
+        rel="noopener"
+        class="label mt-4 rounded-full bg-terracotta px-4 py-3 text-center text-shell"
+      >Message on WhatsApp</a>
+    </nav>
+  </div>
+</header>

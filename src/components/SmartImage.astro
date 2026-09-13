@@ -1,0 +1,43 @@
+---
+import { Picture } from 'astro:assets'
+import type { GalleryImage } from '../data/projects'
+
+interface Props {
+  image: GalleryImage
+  sizes: string
+  widths?: number[]
+  /** Only the hero/first card should be eager. */
+  priority?: boolean
+  class?: string
+  ratio?: string
+}
+
+const {
+  image,
+  sizes,
+  widths = [480, 768, 1200, 1800, 2400],
+  priority = false,
+  class: cls = '',
+  ratio,
+} = Astro.props
+
+// Never request widths larger than the master actually is.
+const capped = widths.filter((w) => w <= image.width)
+if (!capped.length) capped.push(image.width)
+---
+<div
+  class={`relative overflow-hidden bg-sand ${cls}`}
+  style={`${ratio ? `aspect-ratio:${ratio};` : ''}background-image:url('${image.blur}');background-size:cover;background-position:center;`}
+>
+  <Picture
+    src={image.src}
+    formats={['avif', 'webp']}
+    widths={capped}
+    sizes={sizes}
+    alt={image.alt}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding={priority ? 'sync' : 'async'}
+    fetchpriority={priority ? 'high' : 'auto'}
+    class="h-full w-full object-cover"
+  />
+</div>

@@ -1,0 +1,130 @@
+---
+import '../styles/global.css'
+import { SITE } from '../lib/site'
+import Nav from '../components/Nav.astro'
+import Footer from '../components/Footer.astro'
+import WhatsAppFab from '../components/WhatsAppFab.astro'
+
+interface Props {
+  title?: string
+  description?: string
+  ogImage?: string
+  /** Suppress the site-name suffix for the home page. */
+  bareTitle?: boolean
+}
+
+const {
+  title,
+  description = SITE.description,
+  ogImage = '/og/default.jpg',
+  bareTitle = false,
+} = Astro.props
+
+const pageTitle = !title
+  ? `${SITE.name} — Interior Designers in ${SITE.city}`
+  : bareTitle
+    ? title
+    : `${title} | ${SITE.name}`
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://interiorbyjenish.com')
+const ogUrl = new URL(ogImage, canonical)
+
+// schema.org has no interior-design business type. HomeAndConstructionBusiness
+// is the correct supertype; additionalType pins the actual discipline.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['HomeAndConstructionBusiness', 'LocalBusiness'],
+      '@id': `${canonical.origin}/#business`,
+      additionalType: 'https://www.wikidata.org/wiki/Q1752209',
+      name: SITE.name,
+      description: SITE.description,
+      url: canonical.origin,
+      image: ogUrl.href,
+      telephone: SITE.phoneE164,
+      email: SITE.email,
+      priceRange: '₹₹',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: SITE.city,
+        addressRegion: SITE.region,
+        addressCountry: SITE.country,
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+      areaServed: SITE.serviceAreas.map((c) => ({ '@type': 'City', name: c })),
+      sameAs: [SITE.instagramUrl],
+      founder: { '@type': 'Person', name: 'Jenish' },
+      knowsAbout: [
+        'Residential interior design', 'Office interior design',
+        'Modular kitchen design', '3D interior visualisation',
+        'Turnkey interior execution', 'Wardrobe design', 'False ceiling design',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${canonical.origin}/#website`,
+      url: canonical.origin,
+      name: SITE.name,
+      publisher: { '@id': `${canonical.origin}/#business` },
+      inLanguage: 'en-IN',
+    },
+  ],
+}
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <meta name="theme-color" content="#F5F1EA" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={ogUrl.href} />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+    {/* Mark motion as allowed before paint, so reveal elements start hidden
+        without a flash. No-JS and reduced-motion users keep everything visible. */}
+    <script is:inline>
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('motion-ok')
+      }
+    </script>
+  </head>
+
+  <body class="grain">
+    <a
+      href="#work"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-70 focus:bg-ink focus:text-plaster focus:px-4 focus:py-2"
+    >
+      Skip to the work
+    </a>
+
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppFab />
+
+    <script>
+      import '../scripts/reveal'
+      import '../scripts/nav'
+    </script>
+  </body>
+</html>

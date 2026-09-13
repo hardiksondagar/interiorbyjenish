@@ -1,0 +1,17 @@
+---
+const items = [
+  'Modular Kitchens', 'Wardrobes', 'False Ceiling', 'Office Fit-outs',
+  'Working Drawings', '3D Visualisation', 'Turnkey Execution', 'Furniture Design',
+]
+const doubled = [...items, ...items]
+---
+<div class="border-y border-sand bg-shell py-5 overflow-hidden" aria-hidden="true">
+  <div class="marquee-track">
+    {doubled.map((t) => (
+      <span class="label flex items-center gap-8 pr-8 text-muted whitespace-nowrap">
+        {t}
+        <span class="inline-block h-1 w-1 rounded-full bg-terracotta"></span>
+      </span>
+    ))}
+  </div>
+</div>

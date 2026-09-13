@@ -1,0 +1,1995 @@
+{
+  "generatedAt": "2026-09-13T05:53:08.030Z",
+  "curated": false,
+  "projects": {
+    "anusthan-bungalow": {
+      "slug": "anusthan-bungalow",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 336620,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJYwCdACBiZ2ysNwRDjmfM8ADNbBBnaWrEG2pgVZ+ZIK3KUVOk9/c7yWOekFfGRM7FBMzVtK3ZQAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/123.png",
+          "previewId": "022"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 434860,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACQAwCdASoUAAwAPzmGulOvKKWisAgB4CcJZACdAArsTM+dAb4AAPiQLoW74HnXDx1uRuqGFP1GMmh6EH+3A/va0/8Ghiu+cUi0i7BsNB3xo6qfEqZSPQ+mgPvwN6AsMAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/512.png",
+          "previewId": "023"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 334785,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJYwCdAAqpzFN1fqwAAMqC6WXyxFtPM+9oO2xf5tI/PAHMbev72vD/sdi8jZom88yBStZxFDo5MAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/1234.png",
+          "previewId": "024"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 225060,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCw7BQlnfEHMwAA+1AvAiDv18KyrUkSoAhxLG3fCzpLSSh1ULdWwGeQMypegp99WmFOzkCMAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/TEMPLE 1.png",
+          "previewId": "025"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 309121,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCzgBYAhBZH2CGUCMWIANShQ1i6jHCAEZpi7PgrtbcDqCVpLj6e0+7PSxunQRC0C/4gTAZv+U1WXKK7wAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/VIEW 3.png",
+          "previewId": "028"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 302280,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdABajc1wwdQ5G/j/4AP3NM5aLDMHBDoyVul9rcBX2J3zak46w1DRLOMCtIX+qx6TIQ/BQJUMMHgSQUBUuGdidIHAQAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/VIEW 4.png",
+          "previewId": "029"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 275211,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQAATA/Qqbu9OEYVOUAA2/FHIZGn2GBixalveue+P6KyY46p3Y3SowJqLnLgS0aIVuusEIAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/VIEW 6.png",
+          "previewId": "030"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 257356,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZQC7ABRi2I75bfeDdgAA/ouSYatoMLzBADQ/F7WofNUNVTVAqfHeZFKz3vkxOH43PUtlZETYmoPAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/22-ANUSTHAN BUNGLOW/VIEW 8.png",
+          "previewId": "031"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 247420,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJZQAAWjpRTnmNLx3Uzbm80AD98u3M2/P+7wPLZZNw+eIDJpxjkMuZlXWk665GY1qhrtE1TmAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ/22-ANUSTHAN BUNGLOW/VIEW 7.png",
+          "previewId": "034"
+        }
+      ],
+      "video": {
+        "mp4": "/media/video/anusthan-bungalow-1080.mp4",
+        "webm": "/media/video/anusthan-bungalow-1080.webm",
+        "duration": 34,
+        "aspect": 1.778
+      }
+    },
+    "akshat-paradise-f501": {
+      "slug": "akshat-paradise-f501",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 450697,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCsACLHe0AyRw6I+XgA/hzidSAPFpkJ+TbIIGDNfjLseRfP+yuW8fxL7SmIF4U4RN39Nw7hrXYLDyPv9FrgAAA=",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-04.png",
+          "previewId": "004"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 367340,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCw7A+WrNs76wkAAADMTDWgulMc2V8khmJvUqfTKOyJPkQNuzJYQL2QMdoxFBjhBRBw2UyEX5mQwlKgiDY78agAAA==",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-05.png",
+          "previewId": "005"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 469077,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdABRg+Oq2SypkwEAA3aa5LwVUa5lgopjqF5O+bcwhxDBi0T/qAr3/UCVrT9rMS1uUQsqUkXJsidWcaAAA",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-11.png",
+          "previewId": "011"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 375178,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoUAAsAPzmGulOvKKWisAgB4CcJYwCdAA+aA49xC9lQAAD1y+Nogdb0hewnzDRSPhBBB127OWaEbc9IPzROzX4/OVlMVXgAAAA=",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-16.png",
+          "previewId": "016"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 399691,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoUAAsAPzmEulOvKKWisAgB4CcJYwCsABU6NezF3XwA/HEPGiwy9qGUINvMaYNxp4ecbzszAZhnnmqbir+bcf//HZ3Fz5JaOaizyAAA",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-27.png",
+          "previewId": "027"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 387732,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCo9AeoZxLAAPdw7488iSsn9gZi+/l9lmk/AQ0y7Tg9omrng2sTu0eXmToMCTcb0xP0SMbXxeAA",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-28.png",
+          "previewId": "028"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 413754,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgAtYeBppMpKfniH+AAPxQQBcxDVWpqenK3w9N5dUJforGUQ0wsNtM+4zFHJwje4f2tdWYy12zc8AAAA==",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-29.png",
+          "previewId": "029"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 408116,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgBFnSfUH++OBEQAAA/FATNmSyvt/dGfAw/Nax+47a1ErXsdz4wHHfIXjf7C+MZoCSe98xzWpnslF40AAA",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-30.png",
+          "previewId": "030"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 217151,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASoUAAsAPzmGulOvKSWisAgB4CcJQBOgAw8rqg5I6AAA/axLTd4HAIIKiNL/+Yr7KwVRfRq201Frg9X1CmgBotQ/nFMiExYAAAA=",
+          "room": "f-501-akshat-peredice-2nd-realvision-3d",
+          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-34.png",
+          "previewId": "034"
+        }
+      ],
+      "video": null
+    },
+    "amogha-shantigram": {
+      "slug": "amogha-shantigram",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 208311,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJZQCdABikjgizHFdAAPxaCS4J1rjgyK9/qfJ324Z8PCEW2jY3yau1eRYgUjxJGZ2+a9VHKvMAhbphFzwTgAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/2 (2).jpg",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 253173,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJZQCsACPUOPB5ZRkkAmDF8AD30+tmRFvIQCaWCPy6u0GF4P7MqiTQZgTGeMnivDugS2JT8623VKMOOkpB48dgBv/8UNsAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/2 (3).jpg",
+          "previewId": "002"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 227347,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJYwCdABRCgDQF+j0AAPb2bOcdnxLm0nvi5wqbJjXdGslas+ukuCr5fcTj8KyT4yjo16Uvfmd0yrpWFwAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/3 (2).jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 217661,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQCw7BMZnXovtH3lvxgA+VqhZzvfVWNt16dvj4mOxP2B5Gk/ZWBSoZjA9FXLmltsEIX0so/BDOECymmWx5ZMhQAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/3 (3).jpg",
+          "previewId": "006"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 288488,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJZQC7ABZX7b2JsE2ukoAA/GDQrEd0hO+CIRZ2u6l207H+QuAz4LMzYLw86MUznFgdEEUa0qKg6BEFAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/3 (4).jpg",
+          "previewId": "007"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 218984,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQCdACPcLVKb35USXtvwAP5R8k56hPEgS6/KQKOQ478P3hNN33lWokD5/C91nh9268wA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/4 (2).jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 248973,
+          "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQDE2B+SvMJsyGfcdoYAAP3unmjFS5/TlLSH0x5Zv0+U11AzAJNcqTMZtneOQBr/BukV70f69znrZTPHVrNnzwTnAy76fd1B+3D9eulQAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/4 (3).jpg",
+          "previewId": "010"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 317691,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQCw7AyYZaNGq8gAAP3bNhm5X3QyRyjFfOiCcFZ+v+RfNX6emiOUdYSEcbGAymSS7IqpiwQYAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/4 (4).jpg",
+          "previewId": "011"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 219241,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAwAPzmGulOvKSWisAgB4CcJZQC7AB5Q5l9lZIEZMnxAAADJTSXOmu4vZXW64eHFjFATBNeyMX0RoXFluHavwXQ4QtC1moff/lgA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/AMOGHA ADANI SHANTIGRAM/5.jpg",
+          "previewId": "013"
+        }
+      ],
+      "video": {
+        "mp4": "/media/video/amogha-shantigram-1080.mp4",
+        "webm": "/media/video/amogha-shantigram-1080.webm",
+        "duration": 34,
+        "aspect": 1.778
+      }
+    },
+    "atharv-abode-a604": {
+      "slug": "atharv-abode-a604",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 277640,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASoUAAwAPzmGulOvKSWisAgB4CcJZwAAW+nykXV6/gAA/lIdprPTZuZ7gW4X+NNqhy5wirW6cmvv0IPOpj5aPj1/ybIX2FYAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/5.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 311447,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAwCdASoUAAwAPzmGulOvKKWisAgB4CcJZwDKAB5vx5ZIaz/9aaAAAPzEjymlkgKGvixr4v8pwl7HmpEruVXTYsu/QDITC8G5AAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/6.jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1302,
+          "bytes": 266992,
+          "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZwAAW7ImriFkAAD91rcNa16Q5rujvLYEfcMqlk/7x/Aw3Z1fr5GDHvd3o5voAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/7.jpg",
+          "previewId": "010"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1509,
+          "bytes": 196073,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJaQAAUqlI2EO3uC4QAAD5Gh71D328F4RWKxP4NLGTNw3wDh0uY1pLERTr996ZBaPMSGAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/10.jpg",
+          "previewId": "013"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 195121,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJaQAAVMGI1km3nSsEYYAA+V7vXMhDx5Le64Fe7+COegcOYB7Dld+6Hrk2IFAfNOfGOOAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/11.jpg",
+          "previewId": "014"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1502,
+          "bytes": 276626,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJZwC7ABmS01V9vdNxsAAA9ybDJRo2AbC/QCO6+RN+9RCecmw8ELVT67D5I9Xi9n0+XkT3YAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/14.jpg",
+          "previewId": "017"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1643,
+          "bytes": 295431,
+          "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAwCdASoUAA4APzmGulQvKSWjMAgB4CcJZwDKAEXNFvymgAD+zxh/oXkYZuw4kEcccXiMqLXTu17T1+jbbVwAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/15.jpg",
+          "previewId": "018"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1483,
+          "bytes": 276336,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJaQAAWk10GZRYMUNMAP33R6Jm1FzBI2ukBKSLNPJiE0AiZ2T3C/6xEGEjW1fsFjWtE3oAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/19.jpg",
+          "previewId": "022"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1581,
+          "bytes": 298248,
+          "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJZwAAQd+m+pVGxLbsAPzBpF93pAZhquOxQOE/oCkTVSpgUPoFLqCuIgVOm8kvAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/ATHARV ADOBE A-604/20.jpg",
+          "previewId": "023"
+        }
+      ],
+      "video": null
+    },
+    "auntynoz-pizza": {
+      "slug": "auntynoz-pizza",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 363866,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCdMoAB0YMujyewXAoAAPYGBk7/FQqFUutc/eogE7R2K52uZtWW8uREdg01CDvcPfrO3VlbxRLWBHV4AA==",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-1.png",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1676,
+          "bytes": 461316,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoUAA4APzmEuVOvKKWisAgB4CcJYwCw7CDKq0CT28ziCAD3gYb5O/m6daZXl+D+7Z+2ui5vB+yACc2Lw+Ab36TTnOJxq7ZTKZLftPWMYw/xk1Hwtx3ONpwEAAA=",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-2.png",
+          "previewId": "002"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 354645,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBWAA724w+Zl797DpcAyAPvaJvvqruQeSPrQ2DIPfIsfBmn/vsjtdgW5hpvZCQXHvZQJ50YBnUK3hamFtUAA",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-3.png",
+          "previewId": "003"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 340209,
+          "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgA26e1qjqLYxjBmAA/dR4M2en4joOPRp3S75YY6J4rAh/N1Y+XYQ2pkrvP1vSsCE7XKYTiv13HKSUJL9mljNt1HoYr1JtJEkgAAA=",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-4.png",
+          "previewId": "004"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 369500,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABgL8A7tsA2CCrNIADv0cMYfPNptA8/0MoH4E/SLHbLsx/Ul6IM8z7NJiPQZR5BtZLwThbaztysgAAA",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-5.png",
+          "previewId": "005"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 385664,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgA/Bc5DlEKyuAtoWyAAD+MWZCkjq2uG5p3n9LPyoQ6shL0SlhfFJkGunXKNhEhuDZ0hzZCXQXprnJGpCC3AJx2VEA6pqDQAAA",
+          "room": "auntyo-z-pizza-hathijan",
+          "source": ".work/raster/auntynoz-pizza/auntyo-z-pizza-hathijan/page-6.png",
+          "previewId": "006"
+        }
+      ],
+      "video": {
+        "mp4": "/media/video/auntynoz-pizza-1080.mp4",
+        "webm": null,
+        "duration": 32,
+        "aspect": 1.778
+      }
+    },
+    "aegis-steel-cast": {
+      "slug": "aegis-steel-cast",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 413479,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZwAASjpX59VRI5AAAPyvpUKBkEuqizNRQ/5EiW+VnPbCdE3hUZd1AiFUBxDeBE2v78o7QAAAAA==",
+          "room": "confrance",
+          "source": ".work/raster/aegis-steel-cast/confrance/page-3.png",
+          "previewId": "004"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 327466,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwBACdASoUAAsAPzmEuVOvKKWisAgB4CcJYwDA3CDpJD84ADOaw1Dv7AAA/d/SKK7qrcFVbC15B+6scbLlPjbMGx+ngkVfSsqg4wOwJi5AAA==",
+          "room": "confrance",
+          "source": ".work/raster/aegis-steel-cast/confrance/page-4.png",
+          "previewId": "005"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 301415,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJZQDE2A9wO3u/HAAA97dmYFh8jynxBnopG4yTJcbKFBLRFTJmPxP81n70eIeFOcNLAAAA",
+          "room": "manager-cabin",
+          "source": ".work/raster/aegis-steel-cast/manager-cabin/page-1.png",
+          "previewId": "007"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 312724,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQDCgBJt2DQrh5SKAADKebHJba4fH/mEHOuAudD2uPhyFHjqSuzZutCZgc4LkCykCAAA",
+          "room": "manager-cabin",
+          "source": ".work/raster/aegis-steel-cast/manager-cabin/page-2.png",
+          "previewId": "008"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 304640,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCsABjOBhh4PyaRh4AA9590+eYSbEpPmlXLxVlLpLxQUdRwTsgdRrmWsAdE82dea6x9JMRBOELQ/9otkebnQfocmAAA",
+          "room": "manager-cabin",
+          "source": ".work/raster/aegis-steel-cast/manager-cabin/page-3.png",
+          "previewId": "009"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 277352,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBadApd/DmoDUvX7+AAA3VGzJK9s8GH3fYSsg1asaT2O0PCDQFY4flUw57Nwu0eILRJ9gGjyAVIhoKF/F9cXbYAAAA==",
+          "room": "manager-cabin",
+          "source": ".work/raster/aegis-steel-cast/manager-cabin/page-4.png",
+          "previewId": "010"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 341544,
+          "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdABmCIgk6y94frCHBAAD8sIEWoU6ur6Tcj5hKhhor8GXmyVF6+m/tC5nHSdA41tUi0IlR5DAOItRbyxaqYn5m4yJvqlqgAA==",
+          "room": "manager-cabin",
+          "source": ".work/raster/aegis-steel-cast/manager-cabin/page-6.png",
+          "previewId": "012"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 295115,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZQCw7B7Hw3BY5V1RE1iz6AD855VNVTMHp6t5pTAFszx6Uz+b/kZYoGF9njgFbmoKJu4+4yYuOtViiGXAIa2qAS6ADh/NoAA=",
+          "room": "staff",
+          "source": ".work/raster/aegis-steel-cast/staff/page-1.png",
+          "previewId": "013"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 309200,
+          "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQDCgBkn8Raq9OIRgAAA4TqXJrXAPYQ0na/hr0dBWeqaG9LrLupwUjiC1lJdazgE1KzuqrJ09n59wLQdwxQ+r6MeI53G5sEIAA==",
+          "room": "staff",
+          "source": ".work/raster/aegis-steel-cast/staff/page-2.png",
+          "previewId": "014"
+        }
+      ],
+      "video": null
+    },
+    "bhagwati-hardware": {
+      "slug": "bhagwati-hardware",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 287659,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJaQAAS/pvV2T+tV/+a4AA/UdW1qjMfYHVm/uJOW4yVwnz1Wvw4BfTY9JMTuUQSv0pSuz+8AAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BHAGWATI HARDWARE - 3/1.jpg",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 174131,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJaQAAYfAhk+jBglxlfgAAAPqe8rGLYnUXJsLfe1KiMBfM+kqhRitt57PF/RC0eufhMIAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BHAGWATI HARDWARE - 3/2.jpg",
+          "previewId": "002"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 286771,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZwAAV4W4EiUV0O0AAOJZI3Jfl94s3SJCWxWU9D0ZV/ZJBfBqoNEP4X5glZT3iqXCLebsmuNO8TJhMQhm7vywAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BHAGWATI HARDWARE - 3/3.jpg",
+          "previewId": "003"
+        }
+      ],
+      "video": null
+    },
+    "paldi-402": {
+      "slug": "paldi-402",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 324210,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQC+SCBXvYGX5Z7w+VAAAM1UMq/PomNMSaS7jRblJHZyiuVywXipX0/rsMMi5vqPi5faKhX83Tcml/cPRV5YWAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/4.jpg",
+          "previewId": "004"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 320212,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCo9BEcgqYQLdSTgAD8v/+4yZhQtbqoBPRMJI2m6SE0ZS6DccIc5rwaG4wk1OagvFHDoBj00A/sW0GFb2C4Rxxr/7h+zVbmvgAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/7.jpg",
+          "previewId": "007"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 255404,
+          "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgA8M2Mj7onFHwvKAA/f3+dFhnOtXd0PG6EXpYIbs1O6TSiYSJSP0i/++LINiP1X9c2RDLbwYgL9Q52U7fFW2FLgHn4cAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/8.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 324114,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJYwDG9BjSKAefCuccumrIKAD9Xf+ysUweUJCI8jxq7Y/Mk9rM/ba94j1NJlXzQhB3zm/0GCm87gx+VdZdqVpR9yrgIkAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/9.jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 246810,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBWAAxXO5jKpMUK9ELdAAP314wq44NStw/0KPYa0z7zk1Q5Te86q/c8DB+x0yEaOBlQPI0xHOdOav5juyY39ndgAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/14.jpg",
+          "previewId": "014"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 282536,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCw7BjJDx+h+tHg1g8AAPtnA13XnCtfOLiWDFNT35VDS6alUj99VZPJkEwRCKyH+jSkVAZrjzztDLvhq9n/D/X7zoZhAbieAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/15.jpg",
+          "previewId": "015"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 235836,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBhQA/ou+hVN34WxI7AAAPlVItOsD61eEAFdfn9NGxRWu0jpI3PP7NpqNtuYzRAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/18.jpg",
+          "previewId": "018"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 288457,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBadBNjWbMM6VySc1HQAAP30sFhTnEIbHGg/0cl8Ov2kf2tCsO39j0xgHmCH7WiPv9uJIWl3ZCAPcCKAmAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/19.jpg",
+          "previewId": "019"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 287775,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJYgC2yBiwrK/Tsy6+TlUoAAD5KwWmdQiEXTbofEKE37No84IgpZPNW6X9ZR7apas+xm/TqlJeWj6h9+2gfOsULw7/oAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/BIPINBHAI PALDI 402/20.jpg",
+          "previewId": "020"
+        }
+      ],
+      "video": null
+    },
+    "bharwad-residence": {
+      "slug": "bharwad-residence",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 194450,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQC06BsugfbO9FKN/gAA/FPp5nywlPG/+YKRQ/JjXbcfWETX6GNJlmByBJW5ZR8MAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_BED 3 scene 2.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 230216,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoUAAsAPzmGu1QvKSYjMAgB4CcJZQCw7CFS4vrzfT9Ob/KIAAD9zI+85TbUnyWPSejHQADk+1oYiJnjm3kOMiG8M1ipsYjCob7eZToAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_BED 3 scene 3.jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 239012,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACQAwCdASoUAAsAPzmGuVQvKSWjMAgB4CcJZQC7AB0vOPnwpaAAAP3QqcIZkWaYFqhXdDVmrMDJFTSF7SASXzUwC29ykqXiosAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_BED 3 scene 4.jpg",
+          "previewId": "010"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 174380,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAwCdASoUAAsAPzmIuVQvKSWjMAgB4CcJZQCw7B6Wv1vlgDcbh9oAAP3PCCKBhyAqMjLwEt6D/2eBBEr47wEAfK9F7w0j+ghIBAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_BED 3 scene 5.jpg",
+          "previewId": "011"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 323017,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJZQC06CBvYfPYD2hWiAoAAAD11TYUmRrJYE2ac+kTnq8XS4KFqrgcYKvRTK8L3ZgPqFqcOxS9m3iHawswAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_F-BED scene 5.jpg",
+          "previewId": "023"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 254380,
+          "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQCdABb6tT/x/wAA/dhYsFigmqmRBx36oVCjJue1CkH2hTTijA+oNGif62yhk27vkkWPwpTehGAeXnCpRtYWFRyYEk1iuF5YAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_LIVING 1 scene 5.jpg",
+          "previewId": "044"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 261812,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCsABnOcSgFh6CTs6AA/locdJTbjRnCDsqDVKLYUkwH2hDRk0/wrYCuKdMTpNiRTSjeMbUwQAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_M.BED scene 4.jpg",
+          "previewId": "052"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 250736,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZQCsACD3F5//dQAAAP6NxfLNJq2ygDkETIHcTmu58IB3Jh5QJuF5OaPoPcTH7dvQrF3BAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/3D/Enscape_2026-06-22-23-10-47_M.BED scene 5.jpg",
+          "previewId": "053"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 136616,
+          "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAAsAPzmGu1OvKSYisAgB4CcJZQCdABujJinLbs2ugAD+ruo9vKxgAUfsPcPmS1MYhjwvMZH4zcuxOh779OtQAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/Dashrathbhai Bharwad/Kitchen - DB/Enscape_2026-05-28-23-41-16_k scene 4.jpg",
+          "previewId": "057"
+        }
+      ],
+      "video": null
+    },
+    "sharma-residence": {
+      "slug": "sharma-residence",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1926,
+          "bytes": 314032,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUABAAPzmGulOvKKWisAgB4CcJZwAAUh5lXhRIHM/DAADuk2Iqvd3GnnQ0dtAppxoabuzGX7cKYRhdggkmjt4wmbRSgoAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/1.jpg",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1785,
+          "bytes": 286901,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoUAA8APzmEuVOvKKWisAgB4CcJZwAAUhXnYWKMEIAA297bTECPTq7LFB1ZIDrKdVqpbsVFDX+MUjRmGYs3iSQCgtSS2pshpo+mvrjw64rimOeB703kkMAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/2.jpg",
+          "previewId": "002"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 2255,
+          "bytes": 363722,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoUABMAPzmMulYvKSWjqA1R4CcJZwDLpBGPTz78fvH4Gfz7qAAA/e8fby6FK3LXMGgn4ldwX5d4rzWn1ZnqZE81B2yPfbnEc2T87pNIjM0H0RAAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/3.jpg",
+          "previewId": "003"
+        },
+        {
+          "file": "04.jpg",
+          "width": 1925,
+          "height": 2400,
+          "bytes": 237729,
+          "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoUABkAPzmQvFWvKqYjMBgIAeAnCWcAx+QJQq61bPgGkCaQ5v7cpjgAyu0rBatdZ3EZmtb6DCoz4C4PjVYTH39Qh0EO63mvX5AzedEl9OYZcWzSFyj1NehGXcQIHZx/8KPZrzk4yXsJG+oWiT3zwAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/4.jpg",
+          "previewId": "004"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1353,
+          "bytes": 184006,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJaQAAM36KBAaAkAAA/nc8z4du2pGlercyKHR0EHWfCdFoTVBdrqC/coIQ8V6ufoAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/5.jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1325,
+          "bytes": 202453,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZwAATAG4ZFnISz9YAAD4nzJuntw8Jlc2KIJzXusII5hvnQSd+rGoZZS1VpTmueUzOp6+TMVA2/PYccxm3oAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/6.jpg",
+          "previewId": "006"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1920,
+          "bytes": 270064,
+          "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAwCdASoUABAAPzmEuVOvKKWisAgB4CcJaTuAABLjtHWYAP60jrTvnmkfHTI4J0NxeuEXZ0Tt2zXwBN6H42AA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/7.jpg",
+          "previewId": "007"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1780,
+          "bytes": 220255,
+          "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAwCdASoUAA8APzmIulQvKSWjMAgB4CcJaQAAXEp+4gAA8Q63Mq6fBrnsaXUEgnz/EBZc2495LTYQFAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/8.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "09.jpg",
+          "width": 1930,
+          "height": 2400,
+          "bytes": 339053,
+          "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASoUABkAPzmSulgvKiUjqAqp4CcJZwDIXBDdRrV88abAqKmLm9OwEqgAAP7EKE7ATwJkuAf5p20QHv7pzWq/aKN8SyPyuuKlVi6fQLf+n11dScVR1kRzz5YsMGjVFfuZoAAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/HARSH SHARMA/9.jpg",
+          "previewId": "009"
+        }
+      ],
+      "video": null
+    },
+    "jaipur-residence": {
+      "slug": "jaipur-residence",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 222657,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAAwAPzmGulOvKKWisAgB4CcJQAALS5crepCQwAoAAP354/L0AWklVRrR57oBBOcYTJcDn9e6/DODRPD1gL96LztS8oNZZXAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/2.jpg",
+          "previewId": "002"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 207731,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJQAAIDWP9VlbxgAD+VeBmOqkKK50mEb7D3QYB0eSMZl2i9d2Nt5LJNorEGq3b/MG8hMkMpxP6AAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/4.jpg",
+          "previewId": "004"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 241986,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAAwALvmczmclLy8vDwD4SgCzgDysemTlg57r3j7wAP3SA8UdMOrkdNOAyoAb+ZqeCpXMFmy5MSJS0EjvivuPa6tRbNzFrbfpXzcXdjoJXmp3YgAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/5.jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 231168,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAwAPzmGuVOvKKWisAgB4CcJY1efRgANfX2lzv2QANz5YUy1Zv7UpyoOJxTpZaVNYffIs/rtPTXiIllr59Pynq2XZgAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/7.jpg",
+          "previewId": "007"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 219269,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJYwC7ACPg/LJvgdwef8kAAP3iZWmVZ/BRsdRK5spDoGvi+4d5v2LLaQVmShD2nMAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/15.jpg",
+          "previewId": "015"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 185243,
+          "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQDE2CCgsJUDgQAA/otp7OCQuk51wWhunlwTYCxqAn2OtkoZQk2UAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/16.jpg",
+          "previewId": "016"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 278683,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJYwC06Ba3YFDla5NWZODQAPyL1YDE1UFbz9SLgXsbIFB3nBLLhKGDYKJ+rByP4TDBwJ/+wU3nX3p7sKcsAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/19.jpg",
+          "previewId": "019"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 272031,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoUAAwAPzmGulOvKSWisAgB4CcJZQC3uCHDlY/wO5FQAAD9zEp2qKCDoazHkt20Niki3b9yWzTjMmKg/saM0WE28at4O7g6CLFX2gAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/23.jpg",
+          "previewId": "023"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 215786,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQC/OBuHGPGKUjHJCEAA/lMG4vodGsqOZhCk+isNUKxqreGdJ9w3AI/unQe+u84e2vH/PHYAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/JAIPUR PROJECT/26.jpg",
+          "previewId": "026"
+        }
+      ],
+      "video": null
+    },
+    "krishna-avenue-ghodasar": {
+      "slug": "krishna-avenue-ghodasar",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 174993,
+          "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwAAQKcxGGeVQ9QA/c6vK//Rjx90WyWTb9pdUZYSRlWNw205/ZegAAA=",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-03.png",
+          "previewId": "003"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 207064,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQDE2BjdtHkC05rNgAAAzfhAr1LWz4vsqVPGVd2d6XoKeB3QDWt1ys+c2iZwoqoYzP3AAAA=",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-04.png",
+          "previewId": "004"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 228368,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZwAAWlctN8enEN0AAP28iqcw5lov5rU2W09CSjBmM6heGpKtyJg7PS3iGOm1Eu2Z3HfPRAS8AAAA",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-07.png",
+          "previewId": "007"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 206126,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQAASMUX5QbUsADNU9HBDyEVdhzaMPcjr+QqK+br3FKamaeEGpR5hMwhr/aYD47wpca+rS7AAA==",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-09.png",
+          "previewId": "009"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 319301,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoUAAsAPzmGulOvKKWisAgB4CcJZQDCgB02+nz81kaAAADMUI8q7A4b8s/ZzYwhXPaAhWRv2uL6WMOdUgS/emdptZLZKoRU2irEAA==",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-16.png",
+          "previewId": "016"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 276170,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAAsAPzmGuVOvKKWisAgB4CcJZQC7ACDlLTFOuMWQAAD8bC2IC62U/AOeW1DT+vO95rAtAffuXVuSNaaXAxWDLGiXAAAA",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-18.png",
+          "previewId": "018"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 208369,
+          "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsABRsa/G4AADBMwnkU9x68UTnBcaN5mjoe0q+83JDX4vatMAuoAAAAA==",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-19.png",
+          "previewId": "019"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 207141,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJZwDGfBftXUROAAAA/pN8QTRYSmWNTq+Z3hYGvIEguLqfU+rWUlxdhKvcIisAIAt+UAAA",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-21.png",
+          "previewId": "021"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1357,
+          "bytes": 179350,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBgbhHlz1Fd0PUAA+MYKls8z+hv7U26byfnyNjPssx6tcdf7cTIyDNIYdz+ffIgP4+7YjewAAA==",
+          "room": "nitesh-bhai-ghodashara-krishan-avenue-1",
+          "source": ".work/raster/krishna-avenue-ghodasar/nitesh-bhai-ghodashara-krishan-avenue-1/page-23.png",
+          "previewId": "023"
+        }
+      ],
+      "video": null
+    },
+    "karnavati-7-101-104": {
+      "slug": "karnavati-7-101-104",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 320771,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdMoAC19brxVZmgAAA/lmPwtcoaxzktpCPD4PDdmArLyt3EBY89QE5N+6yq7KuTmDqagAAAA==",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-12.png",
+          "previewId": "047"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 371969,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCw7BXnqPJJFrxr1dCAAM4TcoOMB8XvUtq5L1Xh48HXhAWlR9ZUkrjtSbOskaQ/0o/MSxEwiMDo8b4/9ExQAAA=",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-19.png",
+          "previewId": "054"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 387859,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABNxmB/oU4wVqCUYADNQtVctA/jgF8ZiQyjse525ZY6GYIiUzfuFlUHwNs0mnkfJmHqr5mcHwcFaPdjPYwAAA==",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-20.png",
+          "previewId": "055"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 354970,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCdABIyAgyqUzOOgAD+lstPGBdPjjUwh3dZeOtMb/rLRvVkC7iT01a3p9cOMAv6ftgROE6CNi1XsAAAAA==",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-21.png",
+          "previewId": "056"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 353222,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABV7/7ESH3b3hJQAAD8Z3YLhkbtnk+8f0jgpIS+QJfrAfW0W/ajUui+SGs3OqDS1MsgU9ZkrkJzQ6xXOjKReCKEW8KKowAA",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-23.png",
+          "previewId": "058"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 347655,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwC7ABWVEy5v8wAA7UbBbGa398JfClvuUVbBfr5Qtz4Lxjs7X39YXILoM3bBJwSmhptPOVZSCAAA",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-24.png",
+          "previewId": "059"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 263477,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsACGIW0KQk77oIAAA9zF6VoEU+DSAvUZFxFuwuM/73gHHrZiEuX8HRiKI8ztf4Z2FdkvCJ0tgAAA=",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-26.png",
+          "previewId": "061"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 342005,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBWABApcSZy4PbMBmgAA/fTSyg5OsoJFq13aeSmVAoumToiMYfcWvVF85sfX54rC5x56Cy9prsTgLnpGAAAA",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-27.png",
+          "previewId": "062"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 234547,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCw7Bjw9ncXaEuAAP4CuwG6su7UnxmpJWm7IzFC6tHZjO9f3hRDKweYqkyU2LrgkAAA",
+          "room": "101-manishbhau-k7",
+          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-29.png",
+          "previewId": "064"
+        }
+      ],
+      "video": null
+    },
+    "karnavati-7-b301": {
+      "slug": "karnavati-7-b301",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 173084,
+          "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAwCdASoUAAwAPzmGuVOvKKWisAgB4CcJZwDImBueDJb6C6md3wAA4mG7Pi0A0sTF195zj+d0kshLSARbt8KeOD2gAAAA",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-02.png",
+          "previewId": "002"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 156870,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAAwAPzmIulQvKSWjMAgB4CcJZQAAW+pjclR7Z/J1WAAA/ctnrwNMF3v+eJkH7CPFW0PYz99piLVYvU6unt2hi/cEG+ucr3TtHAAA",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-04.png",
+          "previewId": "004"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 336489,
+          "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAwAPzmGulOvKSWisAgB4CcJQBOgAbp+eMHIV+QAAPtijYUfNHKJaQJD4SLkRCjYockcsz4TMKG4mbH5dMW9SuTmsCbMAAA=",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-11.png",
+          "previewId": "011"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 400286,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoUAAwAPzmGuVOvKSWisAgB4CcJQBOgBEP3zQPwwpgfp49gsAAA4lyjQF4O6hnew7SlZYgbMBtNJM8bJGsqzv/QqedsAVUe0tYrCgPv1VuQAA==",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-13.png",
+          "previewId": "013"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 212781,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQDE2B08j1fDeoY4gG3gAP5VZOZi64RNGmSP9p72SyKpNA3U1eKGk1zkTQARqQouTxUUXSJOAaRSVNiQTAAA",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-16.png",
+          "previewId": "016"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 212270,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQC/OBjF0Vw0fUKX7gAA/M5B1L5l/A6X3ypmgWhnHy40bMekfIYlTK6ekJHVKFNFqam7lXDoYe/k1XmLVAAA",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-18.png",
+          "previewId": "018"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 319040,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmGuVQvKSWjMAgB4CcJZwC/7BmetFXzeA0CMC2AAPXFOdO6pMymF2DKM7Q3hs6N2JYKOpHv2liCH4KDxkQJBB1QQP9oI7+w7k4Y4AAA",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-21.png",
+          "previewId": "021"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 350467,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJQBfJA8IIzyxe+wNwC+AA/dJMR+umV4lnq67gHpLwqp9DSnowroFS4O2ZU0IuvhFQhbS0uA+dgjGBYAAAAA==",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-23.png",
+          "previewId": "023"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1402,
+          "bytes": 269440,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoUAAwAPzmKulQvKaWjMAgB4CcJQBjehEHMOH35wsDcW+QQAP5S9w9jWAkAr/Q+IVw2I8FGCmMDOdL8/nIDYFwiaIliBXcEtR9HLW9AH7gg2fweiAAAAA==",
+          "room": "b-301-karnavati-7",
+          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-24.png",
+          "previewId": "024"
+        }
+      ],
+      "video": null
+    },
+    "office-434": {
+      "slug": "office-434",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2223,
+          "height": 2400,
+          "bytes": 448462,
+          "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADQBACdASoUABYAPzmSv1mvKaajqAgB4CcJZQDDcAyAJXabe6+zB8s/njN4ipzIgAD+r28Yb2GOOgWLWnWYPsVsoxd1hY929BmtTleLLrWHhF6+KIKaTxdxHRUI1GkPOFXUtN1RRowsDzQ7VuboJQ4Jcp1EEqfReTiCwewnMrFYMAAAAAA=",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-01.png",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1585,
+          "bytes": 302188,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwAAPyJK/n/5AAD+ZEjwZJHwofUvNLTlLqk6b8R+xcJf/DQRwrhdS+yG/UfTKr0E5CJ0wuTIUZya8adaR9SkAAA=",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-02.png",
+          "previewId": "002"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1371,
+          "bytes": 314053,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwC+SB8/d1vJrO0VpwAA7xgGGW2SS8y5zpYnY87NaXwmPiTHsS8ItHQsMoKPT6r3oSfwuAAAAA==",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-03.png",
+          "previewId": "003"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1477,
+          "bytes": 328792,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJZQCzgB6u+PTOIiB1waGyIADNTuUoPw+SPkd4R6tZlaH5m+CjIn5uF672y9iBvc69q0Dm66lBsHCTSF5aIZmgAAA=",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-04.png",
+          "previewId": "004"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1372,
+          "bytes": 274674,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZwCzgBwuRY39DqhA3xSfkQAA/fo8Iu36ATWe6FnriSr7N5qFESTQ/i04GquuAe9wBwEKRhss7Kkv9eTf/a/BTiOgyXQAAAA=",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-05.png",
+          "previewId": "005"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1371,
+          "bytes": 369730,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCsABa4vXcELny12MAA/HOiTw2SBJHynHZIViBxyW/TVqdhesgPLliGBz9wD4jJ/TmANws2BYHgAAA=",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-06.png",
+          "previewId": "006"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1581,
+          "bytes": 309723,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCdAB69Vs1mE0AA/fl8p+zbErG3C5JRVmTgs74wDPRQiUwBwJn+HFgnn5q4FG7LGwxApsZZ51FGWIAAAA==",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-07.png",
+          "previewId": "007"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1371,
+          "bytes": 249735,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCw7BjsQ+5OvrcH1Oh5QAD9qw4fHciFIWw8CcPFXPMbaOtyuLLVsQcBEZrtsQQWfma/Jea9QAAA",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-08.png",
+          "previewId": "008"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1371,
+          "bytes": 184475,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJZwAAQd/sy54mGjYAAPgmHR33GwmRmAbXrA1B7IomOK83u3sfZ+a6Ro443ZfagUAAAA==",
+          "room": "document-from-interiorbyjenish",
+          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-10.png",
+          "previewId": "010"
+        }
+      ],
+      "video": null
+    },
+    "rr-gandhinagar-b703": {
+      "slug": "rr-gandhinagar-b703",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 239507,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoUAAwAPzmGulOvKKWisAgB4CcJZwC7AB0gIlyDCQO4oAD5KW5oPvGRza0/bkBDhox8/DTK73SVNlJUKtW9Rsv36c9sRI896wxPBu22OfrPAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/2 (2).jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 254921,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZwDE2B06mMKZnT8Ox0wAAPx3CGrXU/RKu+kJIERW3/1ovcEIoNin37clsrMmTNNbjhI0X9lULmJSUd/LwvELjwAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/3 (2).jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 276344,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQC7ACKDFqicnj2iciAA/ddZ9tcPFQ53XCm9abtYSJ9y101PhQWwoMalBXnKcPI1rU1/JlBspXP9tGVeOrJAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/3 (4).jpg",
+          "previewId": "011"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 388240,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQCzgAv8cNk5nRKxwAD4x0DHLRPhFtTlOhmyqdpSjEXqMzD2Xtw5nGq78IVbzFdqG0098JwG2zcWfQMaK8n6OPQAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/3.jpg",
+          "previewId": "012"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 264378,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZwC+SBkXgdu6SDqL0NAA/fpBws1SxCvIXM75OZcC6JKvDrbrTrL8FGC7OefhBAjg4Gw/T8XBIAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/4 (2).jpg",
+          "previewId": "013"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 234562,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZwC3uB9D2TvD6y4AAM1QVjI2BQx6V0mAxzTI07SKK++vcdzv3/WGtIpj7hJLA87hIoexUgxzZ2miAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/4.jpg",
+          "previewId": "016"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 227349,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAAwAPzmGuVQvKSWjMAgB4CcJZwC+SB3XoLIAJnhsQAAA/c8RbiHPj8bVcsoiJvQnqtYQiDs2/IWFq2GRqPXkqqPodQAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/5 (2).jpg",
+          "previewId": "017"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1395,
+          "bytes": 252984,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJZwCdABgzRyc55AAAAM40oPeqaw+8k/cgkeMD3+3mg51blqSDsFTnTTH6Gn7zpkizHySCfYI6rehNhV5AAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/5 (4).jpg",
+          "previewId": "019"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1423,
+          "bytes": 193462,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQC7ABuzSiK/FBM1gAD4qyfzL7Gv2DJhQlhSZHXad8AmHS9m5bc/QLND3s5ERyReeq2Pv6/mfAChtCkfxy8P4VAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/RR GANDHINAGAR B-703/5.jpg",
+          "previewId": "020"
+        }
+      ],
+      "video": null
+    },
+    "setu-solitaire-a302": {
+      "slug": "setu-solitaire-a302",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 377470,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJYwCsAB4cctCFmZVU7IeAAP3Uh4qo4lmZtO9i/WqQwwSrHEUAt0thwIvYIcdFu1qjEQVuMWy8mIl6lvp8XD+XNp3sNQYFkKyjA6AA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/5.jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 311715,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJQBOmUABcoe/htHnBAAAA/lP8gePt61Q5Z017MhmSOKnzW7z2Vs55GuTX4M9NqyciqM6qyeVVrMuIFp8vM/2j1oDTiTlbyAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/6.jpg",
+          "previewId": "006"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 317147,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAwAPzmGulOvKKWisAgB4CcJYwCdACHJ1tb7hbVepAAA4LtS9TARbYqqP1UA+Y9pbGCI9uAzO07/r+/O6XB5IL5+k3tCaeMAKSgCgLTmAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/7.jpg",
+          "previewId": "007"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 282183,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAwAPzmGulOvKSWisAgB4CcJZQDCgBtrXgYKlAslBIYAAPzOMyavY1j2+Hjn/vlkCPOyt7lafGIBGlHlTuZysb0CjlC2ZElV+Cz+iNr9259+0tAA4hB4AAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/8.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 253310,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwAwCdASoUAAwAPzmEuVOvKKWisAgB4CcJZQC7AAyncr5XRAAAzhZB/zL8gb4px9MYdPqmSeTLuBP5j7TKjBz/CdaXZ2vEDZJux0FtatwSKsJAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/10.jpg",
+          "previewId": "010"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 261240,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJZQDCgB+Wr3+XcfuRuJkPAAD8gqMA7kRmkh1Muhpio/BCPzdwqFI//pfmmDNwrNfX8kGhpatO811q4YAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/11.jpg",
+          "previewId": "011"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 263056,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAwAPzmGulOvKSWisAgB4CcJZwC2yBoIsYSbhoQR7IAA/NCp0o4KCF/syIedLW9p1k1W2UV5BOi+w3ztL7b9D4cr/1H6TwAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/20.jpg",
+          "previewId": "020"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 223127,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoUAAwAPzmGulOvKKWisAgB4CcJZQCo9B0f6BJ36G6C/AAAyqsPVAfO+YT3todZjHTdlDeT3S99s0r4L8HyJyMD8T7dA1PjtfR/znfYKLoAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/23.jpg",
+          "previewId": "023"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1401,
+          "bytes": 202305,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQBACdASoUAAwAPzmEuVOvKKWisAgB4CcJZQC06CKuNRltW5Ze+U2wAADJBGyU+mK9b8PCA/FMQIMdQ6dgQrT9lLw6rUDMxQ9LGsAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE A-302/24.jpg",
+          "previewId": "024"
+        }
+      ],
+      "video": null
+    },
+    "setu-solitaire-a602": {
+      "slug": "setu-solitaire-a602",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1482,
+          "bytes": 269049,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJYwC06CIAZwBBHe3cp94AAP6Xg8u1pknRKXpBjC8hhrs1TU9I39DO3JiTMG0pI6Koko2rRAJwYiy3OxVuAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/01.png",
+          "previewId": "002"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1610,
+          "bytes": 336028,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZQAAURbE34ZvEAD+VbWDIRxwyYDlc5tqbgLkHXFH0pb1ZNerP9a865clk896uxHOIhCPVxofg+MStVdbqqk1Yx6RcoAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/02.png",
+          "previewId": "004"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 183987,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZQCw7B4m1KIZWFjabNgA/q9u9zAxH2xvu6QVJpFSNZ7g3lFDpuuw5jQqxVpPATouc7hdVsFHCGpVIbHmZIIcAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/3.jpg",
+          "previewId": "005"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 154654,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJQBdgBCp8zOL77NyxgAD7zrVEEDw4dQgWrsxo/kcXRvBoJICGmXkgTcbQm6nyHNtugLfx75R0KSsxi7yxH7MGgAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/5.jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 212449,
+          "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCsAB5Q6GPLMqUAAP5hCGyya+kgFcMHb2R4F7l3/2p4mttGmyo/wQaXuRUWgRNH5TKmzZJLg0MSlsrhBsr28YJ8WEP4rIdBvjpmFQAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/7.jpg",
+          "previewId": "011"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 195221,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJZQCw7B19EIDQqkZCWAAA/fz2NtOFnu/apEAmJ/P53lGn96BNFxMg6H4G2ybGfPac3ttyoAPmtSuuqn0f7NYmbsWjAlLRwAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/8.jpg",
+          "previewId": "012"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 205129,
+          "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwCdAB48xVOHcteWMOAA/rCxHrMy3ylHdY0z50k544ra0QNYv9b9wZpFvix7PAbYAC5pM/lZR79setBXi8F5bmv44B7Qdu5h6OaNAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/9.jpg",
+          "previewId": "013"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 256608,
+          "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwCdMoADYE1xoK0sPxAAAP3V4k3eaEe6KE2hYo2WHwmH93j3Aq+8nN12oGUV2Gm7A3EZlY+jznH+KfX/I1pAw8zf7rTMBKgOuv4dQAoYAcVAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/10.jpg",
+          "previewId": "014"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2160,
+          "height": 1440,
+          "bytes": 288488,
+          "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwCw7CHEni/Qo5m6wYAA4lzpY7sQIj7/Psn/ObLwCecH4qA5dCKJp+/S/rPzx2eeo3Lm+M/Ou3n4SOWKaz+NegUAdXxH6yKRsDgAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SETU SOLITIRE CHADKHEDA  A-602/12.jpg",
+          "previewId": "016"
+        }
+      ],
+      "video": null
+    },
+    "skylon-gota-a501": {
+      "slug": "skylon-gota-a501",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 236239,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwDE2Bf/+uJekMgAAPx0FX8lFZYD1ZjRVLSPx76EFuVL/i759LIsaJj/TxpJiGbYw2vAEUOu/bt1TIAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/16.jpg",
+          "previewId": "016"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 208935,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJQBfnAw8Ck9/F9B7yyaK4APyi6Jtc3jpRZEFn4IiazAxjxJBJWvFITuemuI/nEkAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/18.jpg",
+          "previewId": "018"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 170697,
+          "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJQAAIFwUZfrFp6AD9zXDhe+fIct9b4Cc5faCLOcDk99yZx4/vF/cmEi15c9r8l4AAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/19.jpg",
+          "previewId": "019"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 274089,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYgCdMoAC9+YI7RJTEfmAAPeBKgCbMRPY9DdgeJCdz2F9TXl6qud+DGFhXXec1fNibBeomBYX9xBXVF6nzwAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 2.jpg",
+          "previewId": "021"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 236694,
+          "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgBHp+PNVzho9wQM6AAP6NSMJSrUUU12zeVhalpAxfIR8nJudYMR6G99qFw3VS/B+oC401tWVStAm4/5ooAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 3.jpg",
+          "previewId": "022"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 217233,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBWAARQdrRik1YAA/FKiSQ3xi8ucCkIsjYq0OiBUCYQBRjTb47dGLQ94leX8YA+tyhL4CZDrr/Pq6xYMYfOiGUC6gtRRPU6kIAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 4.jpg",
+          "previewId": "023"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 189285,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAAsAPzmGulQvKSWjMAgB4CcJYwCdB3gAfTgxwhHMIDsGMADt46HKW9ub9hbffXQNTeNnHkTlVC2814N65Xzv8ZVTurY50JOiip0bj0FGkIAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 5.jpg",
+          "previewId": "024"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 265542,
+          "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABv+HfyoFgZwMQf7AAAAMyMtkJtF4gwJ/EWiPQnefPSPMES1mIcm/u4YwuXIyFloVJXAVFWlbrnGJ437eWEpcKAAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 6.jpg",
+          "previewId": "025"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 276181,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJYgCdMoADKHUpumeo7ffLboAAAOGRjjbx7QH9m6lSRpW7sgq9GKf2RQ3CXrVJ/sFySHDtS0N2MCVekUHYaAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SKYLONE GOTA A-501/Enscape_2024-03-22-15-42-54_Scene 7.jpg",
+          "previewId": "026"
+        }
+      ],
+      "video": null
+    },
+    "sp-nirwana-b1102": {
+      "slug": "sp-nirwana-b1102",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 2400,
+          "height": 1420,
+          "bytes": 195952,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoUAAwAPzmGuVOvKSWisAgB4CcJZwDE2CPVTaEfzUS5u1WJ40AA4Zkn+k6Kwpw4g9vW+amXbuMIg831K1Z+XFPGOVuxACfTzaMTtxqcGo4r1NcllYAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/4.jpg",
+          "previewId": "008"
+        },
+        {
+          "file": "02.jpg",
+          "width": 2400,
+          "height": 1459,
+          "bytes": 339281,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAAwAPzmGuVQvKSWjMAgB4CcJZADDNB08/PPRM3yF9XNAAP3PCirbZcWnPPZCj28K1y8yFYfnQeeo2j1je7mUWfucQT7mv+3JLqpvIvo4AA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/5 (2).jpg",
+          "previewId": "009"
+        },
+        {
+          "file": "03.jpg",
+          "width": 2400,
+          "height": 1420,
+          "bytes": 202969,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJZQAAR6gcqPzhbAAA/NQncHLJt0sW625SSUU7+Agq0odI69MmPTEE673ySzrOZ7a8TcVTfg8j/n/Cf6O7fSgA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/5.jpg",
+          "previewId": "010"
+        },
+        {
+          "file": "04.jpg",
+          "width": 2400,
+          "height": 1409,
+          "bytes": 335684,
+          "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJYwC2yBY1WLYgHtl4NnKPAAD594/LTGUP7jpVW6Ul2gnjoMxJk2htsEAW7wtr2M6+Gz3s7udbRNXFn3Z0tBG85cJW8fVjhIntAaAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/KARAN ROOM VIEW 3.png",
+          "previewId": "013"
+        },
+        {
+          "file": "05.jpg",
+          "width": 2400,
+          "height": 1405,
+          "bytes": 298901,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAwAPzmGulOvKSWisAgB4CcJZwAAUWaldnMlKhAAAPZQ3J2LfrWj//jTFv+Zr56dDqkp6ON57NrlEpqj0yuTp+6L3Z7n2Groz8prXVtgAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/KARAN ROOM VIEW 5.png",
+          "previewId": "014"
+        },
+        {
+          "file": "06.jpg",
+          "width": 2400,
+          "height": 1344,
+          "bytes": 336960,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwC7BagBi6havf2gQB6gANnpm0GAtB2AAnaOm7A0t/7HBnxQAkIQc/m72cDm/OGNTdcYlKEDiHjaAAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/VIEW 2.png",
+          "previewId": "018"
+        },
+        {
+          "file": "07.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 289761,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZwCo9ArDmqgVWW6AAP36P9MVQhvohJSwjLRvJGFTUzuG5g7Z0+u2BKhfvDyHr9bEOoSmTCnSqv2WCHzmQTEl78gAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/VIEW 4.png",
+          "previewId": "020"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 256878,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwC+SBAc0LYnNZE2AAD+VeOq+WTRkXAMUoLou+xY5kqXOCxfz3AtL99CZeU6mByFfeK+LDT9XV+z7QWXoUAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/VIEW 5.png",
+          "previewId": "021"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1347,
+          "bytes": 266156,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwDImBYHX/Xvdw+5yLeAAP3hfcTmLtw33Jv4CrmxlSBCuxYdCBsX4q6geNuBb45p6pVzNlhD+HKN4AA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SP NIRWANA SHELA  B-1102/VIEW 6.png",
+          "previewId": "022"
+        }
+      ],
+      "video": null
+    },
+    "super-shaligram": {
+      "slug": "super-shaligram",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 162115,
+          "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZQCo9A7GxFBzDLwAAP09PWONfjgApoM9X3ELJ4XdJlCW7FqmpO5T30Lz1/HMqqU8TT1k31oE24ROCYBPuPw8XgAAAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Drawing room/3c989a6a-5898-46e7-9f16-cd67d823d5c3.JPG",
+          "previewId": "001"
+        },
+        {
+          "file": "02.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 146848,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCw7BMfIDEPOt0W0AD3wwWmA+iDly7xC1LjqPnbGa2wR7VzZyeoVWcBbkgR7PCLROaXblSJfITXrAA=",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Drawing room/33b68ad4-4510-487c-9268-79c79acbd37e.JPG",
+          "previewId": "003"
+        },
+        {
+          "file": "03.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 185620,
+          "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCdABmJhmxSR0aWS8VgAADNVeVXFCizc+YVD3ooy5JRZ39602IGIvhShPawnmWZOxB+dW3z6JPSBkgoAA==",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Drawing room/93a66f90-be30-410c-80c4-378ba9f3ab58.JPG",
+          "previewId": "005"
+        },
+        {
+          "file": "04.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 181775,
+          "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZQCdABjI7fhF79YnRWuAAAD4RYU0QAW0WY0lbBG0g1keN7GJxLlkiyzL+RhAdFD2w/WRsXJWTdQC7kJXQgAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Drawing room/735cf06c-b356-4592-9f71-a98cb779da5a.JPG",
+          "previewId": "006"
+        },
+        {
+          "file": "05.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 202394,
+          "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZQCdAB6IoV13NpO3t5MgAAD+UkiKul3bXhtBikwh/Gp1DnmUgrebXD4BCvV1ZCE9UK9vZOZ/sjMIyK1ckWGYEMPZvUAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Drawing room/95514ef7-a362-4385-9eeb-5fef91cc5eff.JPG",
+          "previewId": "007"
+        },
+        {
+          "file": "06.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 102305,
+          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwCo9CHTrxyG/fRx4AD+sT7bKkIRO5EOHcREfm39A/J8+o+qsnUZSdcrAUiJ1o9vUAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Master room/7b4c2b72-c193-4993-addb-f5438e3f8e58.JPG",
+          "previewId": "018"
+        },
+        {
+          "file": "07.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 111126,
+          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAsAPzmGulOvKKWisAgB4CcJZQC06CHNxJ/VNZf0n2DQAAD+Zh07FmpWMNdEW1phvhhazaeaA45n4oSQYLohK06rAskdsW7AAAAA",
+          "room": null,
+          "source": "3D DESIGN BY IBJ 2/SUPER SHALIGRAM /Master room/a2c1875e-6d88-4d07-9c88-e1ffc3e75b59.JPG",
+          "previewId": "020"
+        },
+        {
+          "file": "08.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 219415,
+          "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmIuVOvKSWisAgB4CcJQBOgAgr2WJueaf9PDwAAzbtujGrImgGpxQQ4oZX+2r010++6fExdQ755w3XVAR8Hxqfbz/x4Tfb5AAA=",
+          "room": "jeet-room",
+          "source": ".work/raster/super-shaligram/jeet-room/page-4.png",
+          "previewId": "029"
+        },
+        {
+          "file": "09.jpg",
+          "width": 2400,
+          "height": 1350,
+          "bytes": 360833,
+          "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJZQCdMoACLG+sKJMIJ0AAyKCxOp9L5HV9bHPKrF8xs3PzRJYXn3VINlWWlvmyG/lUvAoOwlXwAA==",
+          "room": "kushal-room",
+          "source": ".work/raster/super-shaligram/kushal-room/page-6.png",
+          "previewId": "039"
+        }
+      ],
+      "video": {
+        "mp4": "/media/video/super-shaligram-1080.mp4",
+        "webm": "/media/video/super-shaligram-1080.webm",
+        "duration": 8,
+        "aspect": 1.778
+      }
+    },
+    "anusthan-harmony": {
+      "slug": "anusthan-harmony",
+      "source": "auto",
+      "gallery": [
+        {
+          "file": "01.jpg",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 192020,
+          "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCo9AMVsQflxADbHGPr9AkjSU9ilkVi6wD+0KHSVIKok0NZSz4BgLlqAAAA",
+          "room": null,
+          "source": ".work/raster/_posters/anusthan-harmony.png",
+          "previewId": "001"
+        }
+      ],
+      "video": {
+        "mp4": "/media/video/anusthan-harmony-1080.mp4",
+        "webm": "/media/video/anusthan-harmony-1080.webm",
+        "duration": 34,
+        "aspect": 1.778
+      }
+    }
+  }
+}

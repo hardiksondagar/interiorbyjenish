@@ -1,0 +1,44 @@
+---
+import Logo from './Logo.astro'
+import { SITE, telHref, mailHref } from '../lib/site'
+const year = new Date().getFullYear()
+---
+<footer class="bg-ink py-14">
+  <div class="shell">
+    <div class="flex flex-wrap items-start justify-between gap-10">
+      <div>
+        <Logo class="text-base text-plaster" />
+        <p class="mt-5 max-w-[36ch] text-sm text-plaster/55">
+          Interior design and turnkey execution for homes and offices in {SITE.city}.
+        </p>
+      </div>
+
+      <nav class="flex flex-wrap gap-x-10 gap-y-3" aria-label="Footer">
+        {[
+          { href: '/#work', label: 'Work' },
+          { href: '/#films', label: 'Films' },
+          { href: '/#process', label: 'Process' },
+          { href: '/#contact', label: 'Contact' },
+          { href: SITE.instagramUrl, label: 'Instagram', ext: true },
+        ].map((l) => (
+          <a
+            href={l.href}
+            target={l.ext ? '_blank' : undefined}
+            rel={l.ext ? 'noopener' : undefined}
+            class="label text-plaster/60 hover:text-plaster transition-colors duration-300"
+          >{l.label}</a>
+        ))}
+      </nav>
+
+      <div class="space-y-2">
+        <a href={telHref} class="block text-sm text-plaster/70 hover:text-plaster transition">{SITE.phoneDisplay}</a>
+        <a href={mailHref} class="block text-sm text-plaster/70 hover:text-plaster transition">{SITE.email}</a>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-plaster/12 pt-7">
+      <p class="label text-plaster/35">© {year} {SITE.name}</p>
+      <p class="label text-plaster/35">{SITE.city} · {SITE.region}</p>
+    </div>
+  </div>
+</footer>

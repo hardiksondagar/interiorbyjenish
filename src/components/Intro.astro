@@ -1,0 +1,57 @@
+---
+import SmartImage from './SmartImage.astro'
+import { PROJECTS, STATS } from '../data/projects'
+
+// Second image of the strongest featured project: a real render, not a stock
+// studio photo we don't have.
+const showcase = PROJECTS[0]?.gallery[1] ?? PROJECTS[0]?.cover
+---
+<section class="section-y">
+  <div class="shell grid items-center gap-12 lg:grid-cols-12 lg:gap-20">
+    <div class="lg:col-span-5">
+      <p class="label mb-6 text-terracotta-ink">The Studio</p>
+      <h2 class="text-ink" style="font-size:var(--text-display-m)">
+        Led by Jenish, out of Ahmedabad.
+      </h2>
+      <div class="mt-6 space-y-4 text-muted">
+        <p>
+          Interior by Jenish designs and builds interiors for families and businesses
+          across Ahmedabad — apartments in Gota, Shela, Chandkheda and Paldi, bungalows,
+          and office fit-outs from single cabins to full industrial floors.
+        </p>
+        <p>
+          Every project is modelled completely before it is built. That is the whole
+          method: decide it on screen, where changing your mind is free, then execute
+          once, properly.
+        </p>
+      </div>
+
+      <dl class="mt-10 grid grid-cols-3 gap-6 border-t border-sand pt-8">
+        {[
+          { n: STATS.projects, label: 'Projects' },
+          { n: STATS.images, label: 'Renders' },
+          { n: STATS.films, label: 'Films' },
+        ].map((s) => (
+          <div>
+            <dt class="font-display text-3xl text-ink tabular-nums">
+              <span data-count={s.n}>{s.n}</span>
+            </dt>
+            <dd class="label mt-2 text-muted">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    {showcase && (
+      <div class="lg:col-span-7">
+        <div class="reveal-img">
+          <SmartImage
+            image={showcase}
+            sizes="(min-width:1024px) 56vw, 100vw"
+            ratio="4/3"
+          />
+        </div>
+      </div>
+    )}
+  </div>
+</section>

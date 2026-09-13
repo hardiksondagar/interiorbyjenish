@@ -1,0 +1,29 @@
+---
+/** Brand mark, traced with potrace from the monogram on the project title
+ *  slides (portfolio/.../SKYLONE GOTA A-501/1.jpg) and stored as
+ *  src/assets/logo-mark.svg. Imported raw so the path data lives in exactly
+ *  one place; fills with currentColor so it inverts on dark bands. */
+import logoRaw from '../assets/logo-mark.svg?raw'
+
+interface Props { class?: string; withWordmark?: boolean }
+const { class: cls = '', withWordmark = true } = Astro.props
+
+// Strip the standalone <svg> wrapper attributes we don't want inline, and
+// re-apply sizing classes here.
+const inner = logoRaw
+  .replace(/^[\s\S]*?<svg[^>]*>/, '')
+  .replace(/<\/svg>\s*$/, '')
+  .replace(/<title>[\s\S]*?<\/title>/, '')
+---
+<span class={`inline-flex items-center gap-2.5 ${cls}`}>
+  <svg
+    viewBox="86 138 1430 1818"
+    class="h-[1.5em] w-auto shrink-0"
+    aria-hidden="true"
+    focusable="false"
+    set:html={inner}
+  />
+  {withWordmark && (
+    <span class="label leading-none whitespace-nowrap">Interior by Jenish</span>
+  )}
+</span>

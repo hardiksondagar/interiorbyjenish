@@ -1,0 +1,58 @@
+---
+import SmartImage from './SmartImage.astro'
+import type { Project } from '../data/projects'
+
+interface Props { project: Project; index: number; priority?: boolean; wide?: boolean }
+const { project: p, index, priority = false, wide = false } = Astro.props
+
+// Spans are decided by WorkGrid, not here: a 2-column grid where every Nth
+// card goes full width always packs without holes, whereas a 7/5 split on a
+// 12-column grid leaves a 5-column gap whenever two wide cards land in a row.
+const sizes = wide
+  ? '(min-width:768px) 88vw, 100vw'
+  : '(min-width:768px) 43vw, 100vw'
+---
+<article
+  class={`group ${wide ? 'md:col-span-2' : ''}`}
+  data-category={p.category}
+  data-project-card
+>
+  <button
+    type="button"
+    class="block w-full cursor-pointer text-left"
+    data-open-lightbox={p.slug}
+    aria-label={`Open gallery for ${p.title} — ${p.gallery.length} images`}
+  >
+    <div class="reveal-img relative overflow-hidden">
+      <SmartImage
+        image={p.cover}
+        sizes={sizes}
+        priority={priority}
+        ratio={wide ? '16/10' : '4/3'}
+        class="transition-transform duration-[900ms] ease-[var(--ease-out-quint)] group-hover:scale-[1.04]"
+      />
+      <div
+        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      ></div>
+      <span
+        class="pointer-events-none absolute bottom-4 right-4 label rounded-full bg-plaster/95 px-3.5 py-2 text-ink opacity-0 translate-y-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+      >View {p.gallery.length}</span>
+    </div>
+
+    <div class="mt-5 flex items-baseline justify-between gap-4">
+      <div>
+        <p class="label text-muted mb-2">
+          {String(index + 1).padStart(2, '0')} — {p.categoryLabel}
+        </p>
+        <h3 class="text-2xl md:text-[1.75rem] text-ink transition-transform duration-500 group-hover:translate-x-1">
+          {p.title}
+        </h3>
+        <p class="mt-1.5 text-sm text-muted">
+          {p.type}{p.type && ' · '}{p.locality}
+        </p>
+      </div>
+      {p.video && <span class="label shrink-0 text-terracotta-ink">Film</span>}
+    </div>
+    <div class="rule mt-5 origin-left scale-x-0 transition-transform duration-700 ease-[var(--ease-out-quint)] group-hover:scale-x-100"></div>
+  </button>
+</article>

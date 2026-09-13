@@ -1,0 +1,59 @@
+---
+import SectionHeading from './SectionHeading.astro'
+import ProjectCard from './ProjectCard.astro'
+import { PROJECTS, CATEGORIES } from '../data/projects'
+---
+<section id="work" class="section-y scroll-mt-20">
+  <div class="shell">
+    <SectionHeading
+      eyebrow="Completed Projects"
+      title="Every project, start to finish."
+      lede="Apartments, bungalows and offices delivered across Ahmedabad, Gandhinagar and Jaipur. Tap any project to open its full gallery."
+    />
+
+    {/* CSS-only filter: hidden radios + :has() on the container. No JS. */}
+    <div class="reveal mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter projects by type">
+      {CATEGORIES.filter((c) => c.count > 0).map((c, i) => (
+        <label
+          class="label cursor-pointer rounded-full border border-sand px-4 py-2.5 text-muted transition-colors duration-300
+                 hover:border-clay has-checked:border-ink has-checked:bg-ink has-checked:text-plaster"
+        >
+          <input
+            type="radio"
+            name="work-filter"
+            value={c.key}
+            checked={i === 0}
+            class="sr-only"
+          />
+          {c.label} <span class="opacity-55">{c.count}</span>
+        </label>
+      ))}
+    </div>
+
+    <div
+      data-work-grid
+      class="mt-12 grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 md:gap-y-20"
+    >
+      {PROJECTS.map((p, i) => (
+        <ProjectCard project={p} index={i} priority={i === 0} wide={i % 4 === 0} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Filter chips. Radios drive it so the markup stays accessible; this only
+  // toggles a hidden attribute so filtered-out cards leave the a11y tree too.
+  const grid = document.querySelector<HTMLElement>('[data-work-grid]')
+  const radios = document.querySelectorAll<HTMLInputElement>('input[name="work-filter"]')
+  if (grid && radios.length) {
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-project-card]'))
+    const apply = (value: string) => {
+      for (const card of cards) {
+        const show = value === 'all' || card.dataset.category === value
+        card.hidden = !show
+      }
+    }
+    radios.forEach((r) => r.addEventListener('change', () => r.checked && apply(r.value)))
+  }
+</script>

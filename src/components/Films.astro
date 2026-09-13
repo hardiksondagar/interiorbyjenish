@@ -1,0 +1,82 @@
+---
+import SectionHeading from './SectionHeading.astro'
+import SmartImage from './SmartImage.astro'
+import { FILM_PROJECTS } from '../data/projects'
+---
+{FILM_PROJECTS.length > 0 && (
+  <section id="films" class="section-y scroll-mt-20 bg-charcoal">
+    <div class="shell">
+      <SectionHeading
+        dark
+        eyebrow="Walkthrough Films"
+        title="Walk through it before it exists."
+        lede="Full camera walkthroughs of completed projects — the same films we show clients at sign-off."
+      />
+
+      <div class="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:thin]">
+        {FILM_PROJECTS.map((p) => (
+          <div class="reveal w-[86vw] shrink-0 snap-start md:w-[46vw] lg:w-[38vw]">
+            <div
+              class="relative overflow-hidden bg-ink"
+              data-film
+              data-mp4={p.video!.mp4}
+              data-webm={p.video!.webm ?? ''}
+            >
+              <SmartImage
+                image={p.cover}
+                sizes="(min-width:1024px) 38vw, (min-width:768px) 46vw, 86vw"
+                ratio="16/9"
+                class="transition-opacity duration-500"
+              />
+              <button
+                type="button"
+                data-film-play
+                class="absolute inset-0 grid place-items-center bg-ink/25 transition-colors duration-300 hover:bg-ink/10"
+                aria-label={`Play the ${p.title} walkthrough film`}
+              >
+                <span class="grid h-16 w-16 place-items-center rounded-full bg-plaster/95 text-ink transition-transform duration-300 hover:scale-110">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </button>
+            </div>
+            <div class="mt-4 flex items-baseline justify-between gap-4">
+              <div>
+                <h3 class="text-xl text-plaster">{p.title}</h3>
+                <p class="mt-1 text-sm text-plaster/55">{p.type} · {p.locality}</p>
+              </div>
+              <span class="label shrink-0 text-clay">{p.video!.duration}s</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<script>
+  // <video> is created on click only. Nothing here is fetched on page load.
+  document.querySelectorAll<HTMLElement>('[data-film]').forEach((wrap) => {
+    const btn = wrap.querySelector<HTMLButtonElement>('[data-film-play]')
+    btn?.addEventListener('click', () => {
+      const v = document.createElement('video')
+      v.className = 'absolute inset-0 h-full w-full bg-ink object-cover'
+      v.controls = true
+      v.autoplay = true
+      v.playsInline = true
+      v.preload = 'auto'
+      for (const [type, url] of [
+        ['video/webm', wrap.dataset.webm],
+        ['video/mp4', wrap.dataset.mp4],
+      ] as const) {
+        if (!url) continue
+        const s = document.createElement('source')
+        s.type = type
+        s.src = url
+        v.appendChild(s)
+      }
+      wrap.appendChild(v)
+      btn.remove()
+      v.play().catch(() => { v.controls = true })
+    }, { once: true })
+  })
+</script>

@@ -1,0 +1,109 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Base from '../../layouts/Base.astro'
+import SmartImage from '../../components/SmartImage.astro'
+import { PROJECTS } from '../../data/projects'
+import { SITE, waHref } from '../../lib/site'
+
+export const getStaticPaths = (() =>
+  PROJECTS.map((p) => ({ params: { slug: p.slug }, props: { project: p } }))) satisfies GetStaticPaths
+
+const { project: p } = Astro.props
+
+const idx = PROJECTS.findIndex((x) => x.slug === p.slug)
+const next = PROJECTS[(idx + 1) % PROJECTS.length]
+
+const description =
+  `${p.type} interior design in ${p.place} by ${SITE.name}. ` +
+  `${p.gallery.length} views of the completed ${p.categoryLabel.toLowerCase()} project.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageGallery',
+  name: p.title,
+  description,
+  contentLocation: { '@type': 'Place', name: p.place },
+  numberOfItems: p.gallery.length,
+}
+---
+<Base
+  title={`${p.title} — ${p.type} in ${p.locality}`}
+  description={description}
+  ogImage={`/og/${p.slug}.jpg`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+  <article>
+    <header class="shell pt-32 pb-12 md:pt-40">
+      <nav aria-label="Breadcrumb" class="label mb-8 text-muted">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <span class="mx-2 opacity-40">/</span>
+        <a href="/#work" class="hover:text-ink transition">Work</a>
+        <span class="mx-2 opacity-40">/</span>
+        <span class="text-ink">{p.title}</span>
+      </nav>
+
+      <p class="label mb-5 text-terracotta-ink">{p.categoryLabel}</p>
+      <h1 class="text-ink" style="font-size:var(--text-display-l)">{p.title}</h1>
+
+      <dl class="mt-10 flex flex-wrap gap-x-12 gap-y-5 border-t border-sand pt-8">
+        {[
+          { k: 'Type', v: p.type },
+          { k: 'Location', v: p.place },
+          { k: 'Views', v: String(p.gallery.length) },
+          ...(p.video ? [{ k: 'Film', v: `${p.video.duration}s walkthrough` }] : []),
+        ].filter((r) => r.v).map((r) => (
+          <div>
+            <dt class="label text-muted">{r.k}</dt>
+            <dd class="mt-2 text-ink">{r.v}</dd>
+          </div>
+        ))}
+      </dl>
+    </header>
+
+    {p.video && (
+      <div class="shell mb-16">
+        <video
+          class="w-full bg-ink"
+          controls
+          preload="none"
+          playsinline
+          poster={p.cover.src.src}
+        >
+          {p.video.webm && <source src={p.video.webm} type="video/webm" />}
+          <source src={p.video.mp4} type="video/mp4" />
+        </video>
+      </div>
+    )}
+
+    <div class="shell space-y-6 md:space-y-10 pb-20">
+      {p.gallery.map((g, i) => (
+        <figure class="reveal-img" style={`--reveal-delay:${Math.min(i, 4) * 60}ms`}>
+          <SmartImage
+            image={g}
+            sizes="(min-width:1440px) 1360px, 100vw"
+            priority={i === 0}
+          />
+          {g.room && <figcaption class="label mt-3 text-muted">{g.room}</figcaption>}
+        </figure>
+      ))}
+    </div>
+
+    <div class="border-t border-sand bg-shell section-y">
+      <div class="shell flex flex-wrap items-center justify-between gap-8">
+        <div>
+          <p class="label text-muted mb-3">Next project</p>
+          <a href={`/work/${next.slug}/`} class="text-ink hover:text-terracotta-ink transition-colors" style="font-size:var(--text-display-m)">
+            {next.title}
+          </a>
+        </div>
+        <a
+          href={waHref(`Hi Jenish, I saw the ${p.title} project on your site and I'd like to discuss something similar.`)}
+          target="_blank"
+          rel="noopener"
+          class="label rounded-full bg-terracotta px-6 py-4 text-shell hover:bg-terracotta-ink transition-colors duration-300"
+        >Discuss a project like this</a>
+      </div>
+    </div>
+  </article>
+</Base>

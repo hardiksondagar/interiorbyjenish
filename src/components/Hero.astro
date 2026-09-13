@@ -1,0 +1,106 @@
+---
+import { SITE, waHref } from '../lib/site'
+import { STATS } from '../data/projects'
+
+const words = ['Interiors', 'resolved', 'down', 'to', 'the', 'last', 'millimetre.']
+---
+<section class="relative isolate min-h-[92svh] flex items-end overflow-hidden bg-charcoal">
+  {/* Poster-first: the LCP element is always this image, never a video frame.
+      Sources are attached after load by the inline script below. */}
+  <video
+    class="hero-media absolute inset-0 h-full w-full object-cover opacity-70"
+    poster="/media/hero-poster.jpg"
+    muted
+    loop
+    playsinline
+    preload="none"
+    aria-hidden="true"
+    tabindex="-1"
+    data-hero-video
+    data-mp4="/media/video/hero-loop.mp4"
+    data-webm="/media/video/hero-loop.webm"
+  ></video>
+
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/35"
+    aria-hidden="true"
+  ></div>
+
+  <div class="shell relative z-10 pb-16 pt-32 md:pb-24">
+    <p class="label text-clay mb-6">Interior Design · {SITE.city}</p>
+
+    <h1 class="rise text-plaster max-w-[22ch]" style="font-size:var(--text-display-xl)">
+      {words.map((w, i) => (
+        <span class="pr-[0.26em]" style={`--i:${i}`}>{w}</span>
+      ))}
+    </h1>
+
+    <p class="mt-7 max-w-[52ch] text-lg text-plaster/75">
+      Homes and offices across Ahmedabad, designed in full 3D and delivered turnkey —
+      so you see every finish before a single wall moves.
+    </p>
+
+    <div class="mt-10 flex flex-wrap items-center gap-3">
+      <a
+        href="#work"
+        class="label rounded-full bg-plaster px-6 py-4 text-ink hover:bg-shell transition-colors duration-300"
+      >See the work</a>
+      <a
+        href={waHref()}
+        target="_blank"
+        rel="noopener"
+        class="label rounded-full border border-plaster/35 px-6 py-4 text-plaster hover:bg-plaster/10 transition-colors duration-300"
+      >Talk to Jenish</a>
+    </div>
+
+    <dl class="mt-14 grid grid-cols-3 gap-x-6 gap-y-6 border-t border-plaster/15 pt-8 sm:flex sm:flex-wrap sm:gap-x-12">
+      {[
+        { n: STATS.projects, label: 'Projects delivered' },
+        { n: STATS.films, label: 'Walkthrough films' },
+        { n: 3, label: 'Cities served' },
+      ].map((s) => (
+        <div>
+          <dt class="font-display text-3xl sm:text-4xl text-plaster tabular-nums">
+            <span data-count={s.n}>{s.n}</span>
+          </dt>
+          <dd class="label mt-2 text-plaster/60">{s.label}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+
+  {/* Two separate sentinels.
+      - nav: at the TOP of the hero, so "scrolled away from the top" is what
+        flips the nav to its solid state. A bottom sentinel broke this on
+        mobile, where a taller hero pushed it below the fold and the nav went
+        solid at scroll 0.
+      - fab: at the BOTTOM, so the WhatsApp button only appears past the hero. */}
+  <div data-nav-sentinel class="absolute top-0 left-0 h-px w-px" aria-hidden="true"></div>
+  <div data-fab-sentinel class="absolute bottom-0 left-0 h-px w-px" aria-hidden="true"></div>
+</section>
+
+<script>
+  // Attach video sources only after load, and never on reduced-motion or
+  // data-saver connections. Keeps the hero's LCP an image on slow links.
+  const v = document.querySelector<HTMLVideoElement>('[data-hero-video]')
+  if (v) {
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
+    const saveData = (navigator as any).connection?.saveData === true
+    if (!reduced && !saveData) {
+      const attach = () => {
+        for (const [type, attr] of [['video/webm', 'webm'], ['video/mp4', 'mp4']] as const) {
+          const url = v.dataset[attr]
+          if (!url) continue
+          const s = document.createElement('source')
+          s.type = type
+          s.src = url
+          v.appendChild(s)
+        }
+        v.load()
+        v.play().catch(() => {})
+      }
+      if (document.readyState === 'complete') attach()
+      else addEventListener('load', attach, { once: true })
+    }
+  }
+</script>

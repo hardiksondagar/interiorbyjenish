@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro'
+---
+<Base title="Page not found">
+  <section class="shell flex min-h-[70svh] flex-col justify-center py-32">
+    <p class="label text-terracotta-ink mb-6">404</p>
+    <h1 class="text-ink" style="font-size:var(--text-display-l)">That page has moved out.</h1>
+    <p class="mt-5 max-w-[46ch] text-lg text-muted">
+      The page you're after doesn't exist. The work is all on the home page.
+    </p>
+    <a
+      href="/"
+      class="label mt-10 self-start rounded-full bg-ink px-6 py-4 text-plaster hover:bg-charcoal transition-colors duration-300"
+    >Back to the work</a>
+  </section>
+</Base>
