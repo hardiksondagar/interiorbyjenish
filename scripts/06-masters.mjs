@@ -5,7 +5,7 @@
  *  explicitly provisional and reported as such.
  *
  *  curation.json shape - numbers match CURATION.md / preview filenames:
- *    { "skylon-gota-a501": [2,3,4,6,7,9], "office-434": [2,3,5] }
+ *    { "skylon-residency": [2,3,4,6,7,9], "corporate-office": [2,3,5] }
  *
  *  Masters are 2400px JPEG in src/assets/projects/ so Astro's <Picture> can
  *  re-encode them to responsive AVIF/WebP at build time.
