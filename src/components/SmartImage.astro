@@ -25,6 +25,11 @@ const {
   ratio,
 } = Astro.props
 
+// fallbackFormat is WebP rather than the source JPEG: Picture renders the
+// fallback as a third full width-set, and WebP has been universally supported
+// since 2020, so a JPEG set was ~600 wasted encodes per build for no browser
+// that actually exists.
+//
 // Never request widths larger than the master actually is.
 const capped = widths.filter((w) => w <= image.width)
 if (!capped.length) capped.push(image.width)
@@ -36,10 +41,6 @@ if (!capped.length) capped.push(image.width)
   <Picture
     src={image.src}
     formats={['avif', 'webp']}
-    {/* Fall back to WebP rather than the source JPEG. <Picture> renders the
-        fallback format as a third full width-set, and WebP has been
-        universally supported since 2020, so the JPEG set was ~600 wasted
-        encodes per build for no browser that exists. */}
     fallbackFormat="webp"
     widths={capped}
     sizes={sizes}

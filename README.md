@@ -149,6 +149,37 @@ Each needs photos or a different film before it can be shown.
 
 ---
 
+## Pages
+
+| Route | What it is |
+|---|---|
+| `/` | Home. Hero, studio intro, **8 selected projects**, films, process, Instagram, contact. |
+| `/portfolio/` | All 22 projects with category filters. |
+| `/work/<slug>/` | One project: full gallery, film, metadata. 22 pages. |
+| `/404` | Not found. |
+
+The home page originally listed all 22 projects, which made for a very long
+scroll. It now shows the strongest 8 with a "View all 22 projects" CTA.
+`HOME_COUNT` in `src/pages/index.astro` controls it.
+
+Eight is not arbitrary — see the grid rule below.
+
+### The grid packing rule
+
+`WorkGrid` gives every **5th** card a full-width cell (`i % 5 === 0`) in a
+2-column grid. This matters: in a 2-column grid a full-width card cannot sit
+beside a narrow one, so an `i % 4` pattern strands the card *before* each wide
+one alone in a half-empty row. That was a real bug — 22 projects produced six
+half-empty rows.
+
+`i % 5` packs exactly: `wide | pair | pair | wide | pair | pair | …`. Only a
+trailing odd card can sit alone, which reads as intentional. Eight projects
+fill the home grid perfectly: `wide | pair | pair | wide | pair`.
+
+The `Lightbox` takes a `projects` prop rather than importing all of them, so
+the home page doesn't inline gallery data for the 14 projects it never shows
+(~10 KB gz saved).
+
 ## Design system
 
 `src/styles/global.css` holds everything in a Tailwind 4 `@theme` block.

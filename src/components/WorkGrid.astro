@@ -1,59 +1,106 @@
 ---
 import SectionHeading from './SectionHeading.astro'
 import ProjectCard from './ProjectCard.astro'
-import { PROJECTS, CATEGORIES } from '../data/projects'
+import { CATEGORIES } from '../data/projects'
+import type { Project } from '../data/projects'
+
+interface Props {
+  projects: Project[]
+  eyebrow?: string
+  title?: string
+  lede?: string
+  /** Show only the first N. Omit for all. */
+  limit?: number
+  showFilters?: boolean
+  cta?: { href: string; label: string }
+  /** The home page anchors to #work; the portfolio page owns the H1 instead. */
+  id?: string
+  heading?: boolean
+}
+
+const {
+  projects,
+  eyebrow = 'Completed Projects',
+  title = 'Every project, start to finish.',
+  lede,
+  limit,
+  showFilters = false,
+  cta,
+  id = 'work',
+  heading = true,
+} = Astro.props
+
+const shown = limit ? projects.slice(0, limit) : projects
+const hiddenCount = projects.length - shown.length
 ---
-<section id="work" class="section-y scroll-mt-20">
+{/* When the page supplies its own H1 (the portfolio page), skip the section's
+    top padding - otherwise the lede and the filters are separated by a large
+    dead band. */}
+<section
+  id={id}
+  class:list={[
+    'scroll-mt-20',
+    heading ? 'section-y' : 'pb-[clamp(4rem,9vw,8.5rem)] pt-8',
+  ]}
+>
   <div class="shell">
-    <SectionHeading
-      eyebrow="Completed Projects"
-      title="Every project, start to finish."
-      lede="Apartments, bungalows and offices delivered across Ahmedabad, Gandhinagar and Jaipur. Tap any project to open its full gallery."
-    />
+    {heading && <SectionHeading eyebrow={eyebrow} title={title} lede={lede} />}
 
-    {/* CSS-only filter: hidden radios + :has() on the container. No JS. */}
-    <div class="reveal mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter projects by type">
-      {CATEGORIES.filter((c) => c.count > 0).map((c, i) => (
-        <label
-          class="label cursor-pointer rounded-full border border-sand px-4 py-2.5 text-muted transition-colors duration-300
-                 hover:border-clay has-checked:border-ink has-checked:bg-ink has-checked:text-plaster"
-        >
-          <input
-            type="radio"
-            name="work-filter"
-            value={c.key}
-            checked={i === 0}
-            class="sr-only"
-          />
-          {c.label} <span class="opacity-55">{c.count}</span>
-        </label>
-      ))}
-    </div>
+    {showFilters && (
+      <div class="reveal mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter projects by type">
+        {CATEGORIES.filter((c) => c.count > 0).map((c, i) => (
+          <label
+            class="label cursor-pointer rounded-full border border-sand px-4 py-2.5 text-muted transition-colors duration-300
+                   hover:border-clay has-checked:border-ink has-checked:bg-ink has-checked:text-plaster"
+          >
+            <input type="radio" name="work-filter" value={c.key} checked={i === 0} class="sr-only" />
+            {c.label} <span class="opacity-55">{c.count}</span>
+          </label>
+        ))}
+      </div>
+    )}
 
+    {/* Every 5th card spans both columns. Not every 4th: in a 2-column grid a
+        wide card can't sit beside a narrow one, so an i%4 pattern strands the
+        card before each wide one alone in a half-empty row. i%5 packs
+        exactly - wide, pair, pair, wide, ... */}
     <div
       data-work-grid
-      class="mt-12 grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 md:gap-y-20"
+      class={`grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 md:gap-y-20 ${heading || showFilters ? 'mt-12' : ''}`}
     >
-      {PROJECTS.map((p, i) => (
-        <ProjectCard project={p} index={i} priority={i === 0} wide={i % 4 === 0} />
+      {shown.map((p, i) => (
+        <ProjectCard project={p} index={i} priority={i === 0} wide={i % 5 === 0} />
       ))}
     </div>
+
+    {cta && (
+      <div class="reveal mt-16 flex flex-wrap items-center gap-5 border-t border-sand pt-10">
+        <a
+          href={cta.href}
+          class="label rounded-full bg-ink px-6 py-4 text-plaster transition-colors duration-300 hover:bg-charcoal"
+        >{cta.label}</a>
+        {hiddenCount > 0 && (
+          <p class="text-sm text-muted">
+            {hiddenCount} more {hiddenCount === 1 ? 'project' : 'projects'} — homes, offices and commercial spaces.
+          </p>
+        )}
+      </div>
+    )}
   </div>
 </section>
 
-<script>
-  // Filter chips. Radios drive it so the markup stays accessible; this only
-  // toggles a hidden attribute so filtered-out cards leave the a11y tree too.
-  const grid = document.querySelector<HTMLElement>('[data-work-grid]')
-  const radios = document.querySelectorAll<HTMLInputElement>('input[name="work-filter"]')
-  if (grid && radios.length) {
-    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-project-card]'))
-    const apply = (value: string) => {
-      for (const card of cards) {
-        const show = value === 'all' || card.dataset.category === value
-        card.hidden = !show
+{showFilters && (
+  <script>
+    // Radios drive the filter so the markup stays accessible; this only
+    // toggles `hidden`, which also removes filtered-out cards from the a11y tree.
+    const grid = document.querySelector<HTMLElement>('[data-work-grid]')
+    const radios = document.querySelectorAll<HTMLInputElement>('input[name="work-filter"]')
+    if (grid && radios.length) {
+      const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-project-card]'))
+      const apply = (value: string) => {
+        for (const card of cards) card.hidden = value !== 'all' && card.dataset.category !== value
       }
+      radios.forEach((r) => r.addEventListener('change', () => r.checked && apply(r.value)))
     }
-    radios.forEach((r) => r.addEventListener('change', () => r.checked && apply(r.value)))
-  }
-</script>
+  </script>
+)}

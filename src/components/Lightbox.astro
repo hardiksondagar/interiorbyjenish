@@ -1,6 +1,13 @@
 ---
-import { PROJECTS } from '../data/projects'
 import { getImage } from 'astro:assets'
+import type { Project } from '../data/projects'
+
+interface Props {
+  /** Only these projects' gallery data is inlined. The home page shows a
+   *  subset, so shipping all 22 would be ~10 KB gz of unusable payload. */
+  projects: Project[]
+}
+const { projects: PROJECTS } = Astro.props
 
 /** Pre-resolve two widths per gallery image at build time: a 1600px view and
  *  a 2400px one for large screens. Nothing is fetched until the dialog opens,

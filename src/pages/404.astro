@@ -9,9 +9,15 @@ import { withBase } from '../lib/paths'
     <p class="mt-5 max-w-[46ch] text-lg text-muted">
       The page you're after doesn't exist. The work is all on the home page.
     </p>
-    <a
-      href={withBase("/")}
-      class="label mt-10 self-start rounded-full bg-ink px-6 py-4 text-plaster hover:bg-charcoal transition-colors duration-300"
-    >Back to the work</a>
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a
+        href={withBase("/")}
+        class="label rounded-full bg-ink px-6 py-4 text-plaster transition-colors duration-300 hover:bg-charcoal"
+      >Back home</a>
+      <a
+        href={withBase("/portfolio/")}
+        class="label rounded-full border border-ink px-6 py-4 text-ink transition-colors duration-300 hover:bg-ink hover:text-plaster"
+      >See all projects</a>
+    </div>
   </section>
 </Base>

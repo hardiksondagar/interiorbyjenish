@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro'
+import WorkGrid from '../components/WorkGrid.astro'
+import Lightbox from '../components/Lightbox.astro'
+import Contact from '../components/Contact.astro'
+import { PROJECTS, CATEGORIES } from '../data/projects'
+import { SITE } from '../lib/site'
+import { withBase } from '../lib/paths'
+
+const homes = CATEGORIES.find((c) => c.key === 'residential')?.count ?? 0
+const offices = (CATEGORIES.find((c) => c.key === 'office')?.count ?? 0)
+  + (CATEGORIES.find((c) => c.key === 'commercial')?.count ?? 0)
+
+const description =
+  `All ${PROJECTS.length} interior design projects by ${SITE.name} — ${homes} homes, `
+  + `${offices} offices and commercial spaces, across Ahmedabad, Gandhinagar and Jaipur.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Portfolio',
+  description,
+  numberOfItems: PROJECTS.length,
+}
+---
+<Base title="Portfolio" description={description} ogImage="/og/default.jpg">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+  <header class="shell pt-32 pb-4 md:pt-40">
+    <nav aria-label="Breadcrumb" class="label mb-8 text-muted">
+      <a href={withBase('/')} class="transition hover:text-ink">Home</a>
+      <span class="mx-2 opacity-40">/</span>
+      <span class="text-ink">Portfolio</span>
+    </nav>
+
+    <p class="label mb-5 text-terracotta-ink">All Work</p>
+    <h1 class="text-ink" style="font-size:var(--text-display-l)">
+      {PROJECTS.length} projects, start to finish.
+    </h1>
+    <p class="mt-5 max-w-[58ch] text-lg text-muted">
+      {homes} homes, {offices} offices and commercial spaces, across Ahmedabad,
+      Gandhinagar and Jaipur. Tap any project to open its full gallery.
+    </p>
+  </header>
+
+  <WorkGrid projects={PROJECTS} showFilters heading={false} id="all-work" />
+
+  <Contact />
+  <Lightbox projects={PROJECTS} />
+</Base>

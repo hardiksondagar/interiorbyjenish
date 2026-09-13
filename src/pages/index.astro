@@ -9,15 +9,28 @@ import Process from '../components/Process.astro'
 import Instagram from '../components/Instagram.astro'
 import Contact from '../components/Contact.astro'
 import Lightbox from '../components/Lightbox.astro'
+import { PROJECTS } from '../data/projects'
+import { withBase } from '../lib/paths'
+
+/** The home page shows a strong selection rather than all 22 - the full list
+ *  made for a very long scroll. Eight packs the grid exactly (wide, pair,
+ *  pair, wide, pair) with no half-empty rows. */
+const HOME_COUNT = 8
+const featured = PROJECTS.slice(0, HOME_COUNT)
 ---
 <Base>
   <Hero />
   <Marquee />
   <Intro />
-  <WorkGrid />
+  <WorkGrid
+    projects={PROJECTS}
+    limit={HOME_COUNT}
+    lede="A selection from across Ahmedabad, Gandhinagar and Jaipur. Tap any project to open its full gallery."
+    cta={{ href: withBase('/portfolio/'), label: `View all ${PROJECTS.length} projects` }}
+  />
   <Films />
   <Process />
   <Instagram />
   <Contact />
-  <Lightbox />
+  <Lightbox projects={featured} />
 </Base>
