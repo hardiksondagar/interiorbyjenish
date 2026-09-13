@@ -82,8 +82,8 @@ Finder (`.work/preview/<slug>/`) and put the keepers in **`curation.json`**:
 
 ```json
 {
-  "skylon-gota-a501": [2, 3, 4, 6, 7, 9],
-  "office-434": [2, 3, 5, 6]
+  "skylon-residency": [2, 3, 4, 6, 7, 9],
+  "corporate-office": [2, 3, 5, 6]
 }
 ```
 
@@ -114,6 +114,19 @@ The flags in `CURATION.md` are hints, not verdicts:
 category and locality. It exists because the source folders carry typos
 (`SKYLONE`, `SOLITIRE`, `CHADKHEDA`, `Stee Cast`, `PEREDICE`), inconsistent unit
 notation, and client personal names.
+
+**Titles carry no flat or block numbers** — "Skylon Residency", not
+"Skylon Residency · A-501". Where two projects sit in the same building, they
+are separated by location rather than by a unit number:
+
+- `Karnavati 7` and `Karnavati 7, B Wing` — same scheme, distinguished by wing
+  (the source's `B-301` is B wing, flat 301; the wing is kept, the flat dropped)
+- `Setu Solitaire` and `Setu Solitaire, Chandkheda` — only the second folder
+  names its locality
+
+`Corporate Office` was `Office 434`. Its client is Jay Bhagwati Road Carrier,
+whose logo appears on the reception wall in the render, but the name is not
+published — say so if you'd rather it were.
 
 **Client names are not published.** `Bipinbhai`, `Dashrathbhai Bharwad`,
 `Harsh Sharma` and `Niteshbhai` are recorded in the registry's `client` field

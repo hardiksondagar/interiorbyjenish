@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T05:53:08.030Z",
+  "generatedAt": "2026-09-13T06:18:33.180Z",
   "curated": false,
   "projects": {
     "anusthan-bungalow": {
@@ -104,8 +104,8 @@
         "aspect": 1.778
       }
     },
-    "akshat-paradise-f501": {
-      "slug": "akshat-paradise-f501",
+    "akshat-paradise": {
+      "slug": "akshat-paradise",
       "source": "auto",
       "gallery": [
         {
@@ -115,7 +115,7 @@
           "bytes": 450697,
           "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCsACLHe0AyRw6I+XgA/hzidSAPFpkJ+TbIIGDNfjLseRfP+yuW8fxL7SmIF4U4RN39Nw7hrXYLDyPv9FrgAAA=",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-04.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-04.png",
           "previewId": "004"
         },
         {
@@ -125,7 +125,7 @@
           "bytes": 367340,
           "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCw7A+WrNs76wkAAADMTDWgulMc2V8khmJvUqfTKOyJPkQNuzJYQL2QMdoxFBjhBRBw2UyEX5mQwlKgiDY78agAAA==",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-05.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-05.png",
           "previewId": "005"
         },
         {
@@ -135,7 +135,7 @@
           "bytes": 469077,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdABRg+Oq2SypkwEAA3aa5LwVUa5lgopjqF5O+bcwhxDBi0T/qAr3/UCVrT9rMS1uUQsqUkXJsidWcaAAA",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-11.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-11.png",
           "previewId": "011"
         },
         {
@@ -145,7 +145,7 @@
           "bytes": 375178,
           "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoUAAsAPzmGulOvKKWisAgB4CcJYwCdAA+aA49xC9lQAAD1y+Nogdb0hewnzDRSPhBBB127OWaEbc9IPzROzX4/OVlMVXgAAAA=",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-16.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-16.png",
           "previewId": "016"
         },
         {
@@ -155,7 +155,7 @@
           "bytes": 399691,
           "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoUAAsAPzmEulOvKKWisAgB4CcJYwCsABU6NezF3XwA/HEPGiwy9qGUINvMaYNxp4ecbzszAZhnnmqbir+bcf//HZ3Fz5JaOaizyAAA",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-27.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-27.png",
           "previewId": "027"
         },
         {
@@ -165,7 +165,7 @@
           "bytes": 387732,
           "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCo9AeoZxLAAPdw7488iSsn9gZi+/l9lmk/AQ0y7Tg9omrng2sTu0eXmToMCTcb0xP0SMbXxeAA",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-28.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-28.png",
           "previewId": "028"
         },
         {
@@ -175,7 +175,7 @@
           "bytes": 413754,
           "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgAtYeBppMpKfniH+AAPxQQBcxDVWpqenK3w9N5dUJforGUQ0wsNtM+4zFHJwje4f2tdWYy12zc8AAAA==",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-29.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-29.png",
           "previewId": "029"
         },
         {
@@ -185,7 +185,7 @@
           "bytes": 408116,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOgBFnSfUH++OBEQAAA/FATNmSyvt/dGfAw/Nax+47a1ErXsdz4wHHfIXjf7C+MZoCSe98xzWpnslF40AAA",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-30.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-30.png",
           "previewId": "030"
         },
         {
@@ -195,7 +195,7 @@
           "bytes": 217151,
           "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASoUAAsAPzmGulOvKSWisAgB4CcJQBOgAw8rqg5I6AAA/axLTd4HAIIKiNL/+Yr7KwVRfRq201Frg9X1CmgBotQ/nFMiExYAAAA=",
           "room": "f-501-akshat-peredice-2nd-realvision-3d",
-          "source": ".work/raster/akshat-paradise-f501/f-501-akshat-peredice-2nd-realvision-3d/page-34.png",
+          "source": ".work/raster/akshat-paradise/f-501-akshat-peredice-2nd-realvision-3d/page-34.png",
           "previewId": "034"
         }
       ],
@@ -303,8 +303,8 @@
         "aspect": 1.778
       }
     },
-    "atharv-abode-a604": {
-      "slug": "atharv-abode-a604",
+    "atharv-abode": {
+      "slug": "atharv-abode",
       "source": "auto",
       "gallery": [
         {
@@ -606,8 +606,8 @@
       ],
       "video": null
     },
-    "paldi-402": {
-      "slug": "paldi-402",
+    "paldi-residence": {
+      "slug": "paldi-residence",
       "source": "auto",
       "gallery": [
         {
@@ -1091,8 +1091,8 @@
       ],
       "video": null
     },
-    "karnavati-7-101-104": {
-      "slug": "karnavati-7-101-104",
+    "karnavati-7": {
+      "slug": "karnavati-7",
       "source": "auto",
       "gallery": [
         {
@@ -1102,7 +1102,7 @@
           "bytes": 320771,
           "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdMoAC19brxVZmgAAA/lmPwtcoaxzktpCPD4PDdmArLyt3EBY89QE5N+6yq7KuTmDqagAAAA==",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-12.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-12.png",
           "previewId": "047"
         },
         {
@@ -1112,7 +1112,7 @@
           "bytes": 371969,
           "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCw7BXnqPJJFrxr1dCAAM4TcoOMB8XvUtq5L1Xh48HXhAWlR9ZUkrjtSbOskaQ/0o/MSxEwiMDo8b4/9ExQAAA=",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-19.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-19.png",
           "previewId": "054"
         },
         {
@@ -1122,7 +1122,7 @@
           "bytes": 387859,
           "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABNxmB/oU4wVqCUYADNQtVctA/jgF8ZiQyjse525ZY6GYIiUzfuFlUHwNs0mnkfJmHqr5mcHwcFaPdjPYwAAA==",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-20.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-20.png",
           "previewId": "055"
         },
         {
@@ -1132,7 +1132,7 @@
           "bytes": 354970,
           "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCdABIyAgyqUzOOgAD+lstPGBdPjjUwh3dZeOtMb/rLRvVkC7iT01a3p9cOMAv6ftgROE6CNi1XsAAAAA==",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-21.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-21.png",
           "previewId": "056"
         },
         {
@@ -1142,7 +1142,7 @@
           "bytes": 353222,
           "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJQBOmUABV7/7ESH3b3hJQAAD8Z3YLhkbtnk+8f0jgpIS+QJfrAfW0W/ajUui+SGs3OqDS1MsgU9ZkrkJzQ6xXOjKReCKEW8KKowAA",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-23.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-23.png",
           "previewId": "058"
         },
         {
@@ -1152,7 +1152,7 @@
           "bytes": 347655,
           "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwC7ABWVEy5v8wAA7UbBbGa398JfClvuUVbBfr5Qtz4Lxjs7X39YXILoM3bBJwSmhptPOVZSCAAA",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-24.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-24.png",
           "previewId": "059"
         },
         {
@@ -1162,7 +1162,7 @@
           "bytes": 263477,
           "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJYwCsACGIW0KQk77oIAAA9zF6VoEU+DSAvUZFxFuwuM/73gHHrZiEuX8HRiKI8ztf4Z2FdkvCJ0tgAAA=",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-26.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-26.png",
           "previewId": "061"
         },
         {
@@ -1172,7 +1172,7 @@
           "bytes": 342005,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJQBWABApcSZy4PbMBmgAA/fTSyg5OsoJFq13aeSmVAoumToiMYfcWvVF85sfX54rC5x56Cy9prsTgLnpGAAAA",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-27.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-27.png",
           "previewId": "062"
         },
         {
@@ -1182,14 +1182,14 @@
           "bytes": 234547,
           "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCw7Bjw9ncXaEuAAP4CuwG6su7UnxmpJWm7IzFC6tHZjO9f3hRDKweYqkyU2LrgkAAA",
           "room": "101-manishbhau-k7",
-          "source": ".work/raster/karnavati-7-101-104/101-manishbhau-k7/page-29.png",
+          "source": ".work/raster/karnavati-7/101-manishbhau-k7/page-29.png",
           "previewId": "064"
         }
       ],
       "video": null
     },
-    "karnavati-7-b301": {
-      "slug": "karnavati-7-b301",
+    "karnavati-7-b-wing": {
+      "slug": "karnavati-7-b-wing",
       "source": "auto",
       "gallery": [
         {
@@ -1199,7 +1199,7 @@
           "bytes": 173084,
           "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAwCdASoUAAwAPzmGuVOvKKWisAgB4CcJZwDImBueDJb6C6md3wAA4mG7Pi0A0sTF195zj+d0kshLSARbt8KeOD2gAAAA",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-02.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-02.png",
           "previewId": "002"
         },
         {
@@ -1209,7 +1209,7 @@
           "bytes": 156870,
           "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAAwAPzmIulQvKSWjMAgB4CcJZQAAW+pjclR7Z/J1WAAA/ctnrwNMF3v+eJkH7CPFW0PYz99piLVYvU6unt2hi/cEG+ucr3TtHAAA",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-04.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-04.png",
           "previewId": "004"
         },
         {
@@ -1219,7 +1219,7 @@
           "bytes": 336489,
           "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAwAPzmGulOvKSWisAgB4CcJQBOgAbp+eMHIV+QAAPtijYUfNHKJaQJD4SLkRCjYockcsz4TMKG4mbH5dMW9SuTmsCbMAAA=",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-11.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-11.png",
           "previewId": "011"
         },
         {
@@ -1229,7 +1229,7 @@
           "bytes": 400286,
           "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoUAAwAPzmGuVOvKSWisAgB4CcJQBOgBEP3zQPwwpgfp49gsAAA4lyjQF4O6hnew7SlZYgbMBtNJM8bJGsqzv/QqedsAVUe0tYrCgPv1VuQAA==",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-13.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-13.png",
           "previewId": "013"
         },
         {
@@ -1239,7 +1239,7 @@
           "bytes": 212781,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQDE2B08j1fDeoY4gG3gAP5VZOZi64RNGmSP9p72SyKpNA3U1eKGk1zkTQARqQouTxUUXSJOAaRSVNiQTAAA",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-16.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-16.png",
           "previewId": "016"
         },
         {
@@ -1249,7 +1249,7 @@
           "bytes": 212270,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJZQC/OBjF0Vw0fUKX7gAA/M5B1L5l/A6X3ypmgWhnHy40bMekfIYlTK6ekJHVKFNFqam7lXDoYe/k1XmLVAAA",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-18.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-18.png",
           "previewId": "018"
         },
         {
@@ -1259,7 +1259,7 @@
           "bytes": 319040,
           "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUAAwAPzmGuVQvKSWjMAgB4CcJZwC/7BmetFXzeA0CMC2AAPXFOdO6pMymF2DKM7Q3hs6N2JYKOpHv2liCH4KDxkQJBB1QQP9oI7+w7k4Y4AAA",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-21.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-21.png",
           "previewId": "021"
         },
         {
@@ -1269,7 +1269,7 @@
           "bytes": 350467,
           "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoUAAwAPzmGulQvKSWjMAgB4CcJQBfJA8IIzyxe+wNwC+AA/dJMR+umV4lnq67gHpLwqp9DSnowroFS4O2ZU0IuvhFQhbS0uA+dgjGBYAAAAA==",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-23.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-23.png",
           "previewId": "023"
         },
         {
@@ -1279,14 +1279,14 @@
           "bytes": 269440,
           "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoUAAwAPzmKulQvKaWjMAgB4CcJQBjehEHMOH35wsDcW+QQAP5S9w9jWAkAr/Q+IVw2I8FGCmMDOdL8/nIDYFwiaIliBXcEtR9HLW9AH7gg2fweiAAAAA==",
           "room": "b-301-karnavati-7",
-          "source": ".work/raster/karnavati-7-b301/b-301-karnavati-7/page-24.png",
+          "source": ".work/raster/karnavati-7-b-wing/b-301-karnavati-7/page-24.png",
           "previewId": "024"
         }
       ],
       "video": null
     },
-    "office-434": {
-      "slug": "office-434",
+    "corporate-office": {
+      "slug": "corporate-office",
       "source": "auto",
       "gallery": [
         {
@@ -1296,7 +1296,7 @@
           "bytes": 448462,
           "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADQBACdASoUABYAPzmSv1mvKaajqAgB4CcJZQDDcAyAJXabe6+zB8s/njN4ipzIgAD+r28Yb2GOOgWLWnWYPsVsoxd1hY929BmtTleLLrWHhF6+KIKaTxdxHRUI1GkPOFXUtN1RRowsDzQ7VuboJQ4Jcp1EEqfReTiCwewnMrFYMAAAAAA=",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-01.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-01.png",
           "previewId": "001"
         },
         {
@@ -1306,7 +1306,7 @@
           "bytes": 302188,
           "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJYwAAPyJK/n/5AAD+ZEjwZJHwofUvNLTlLqk6b8R+xcJf/DQRwrhdS+yG/UfTKr0E5CJ0wuTIUZya8adaR9SkAAA=",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-02.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-02.png",
           "previewId": "002"
         },
         {
@@ -1316,7 +1316,7 @@
           "bytes": 314053,
           "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZwC+SB8/d1vJrO0VpwAA7xgGGW2SS8y5zpYnY87NaXwmPiTHsS8ItHQsMoKPT6r3oSfwuAAAAA==",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-03.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-03.png",
           "previewId": "003"
         },
         {
@@ -1326,7 +1326,7 @@
           "bytes": 328792,
           "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAAwAPzmGuVOvKSWisAgB4CcJZQCzgB6u+PTOIiB1waGyIADNTuUoPw+SPkd4R6tZlaH5m+CjIn5uF672y9iBvc69q0Dm66lBsHCTSF5aIZmgAAA=",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-04.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-04.png",
           "previewId": "004"
         },
         {
@@ -1336,7 +1336,7 @@
           "bytes": 274674,
           "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZwCzgBwuRY39DqhA3xSfkQAA/fo8Iu36ATWe6FnriSr7N5qFESTQ/i04GquuAe9wBwEKRhss7Kkv9eTf/a/BTiOgyXQAAAA=",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-05.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-05.png",
           "previewId": "005"
         },
         {
@@ -1346,7 +1346,7 @@
           "bytes": 369730,
           "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCsABa4vXcELny12MAA/HOiTw2SBJHynHZIViBxyW/TVqdhesgPLliGBz9wD4jJ/TmANws2BYHgAAA=",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-06.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-06.png",
           "previewId": "006"
         },
         {
@@ -1356,7 +1356,7 @@
           "bytes": 309723,
           "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJYwCdAB69Vs1mE0AA/fl8p+zbErG3C5JRVmTgs74wDPRQiUwBwJn+HFgnn5q4FG7LGwxApsZZ51FGWIAAAA==",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-07.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-07.png",
           "previewId": "007"
         },
         {
@@ -1366,7 +1366,7 @@
           "bytes": 249735,
           "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAsAPzmEuVOvKKWisAgB4CcJZQCw7BjsQ+5OvrcH1Oh5QAD9qw4fHciFIWw8CcPFXPMbaOtyuLLVsQcBEZrtsQQWfma/Jea9QAAA",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-08.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-08.png",
           "previewId": "008"
         },
         {
@@ -1376,14 +1376,14 @@
           "bytes": 184475,
           "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJZwAAQd/sy54mGjYAAPgmHR33GwmRmAbXrA1B7IomOK83u3sfZ+a6Ro443ZfagUAAAA==",
           "room": "document-from-interiorbyjenish",
-          "source": ".work/raster/office-434/document-from-interiorbyjenish/page-10.png",
+          "source": ".work/raster/corporate-office/document-from-interiorbyjenish/page-10.png",
           "previewId": "010"
         }
       ],
       "video": null
     },
-    "rr-gandhinagar-b703": {
-      "slug": "rr-gandhinagar-b703",
+    "rr-gandhinagar": {
+      "slug": "rr-gandhinagar",
       "source": "auto",
       "gallery": [
         {
@@ -1479,8 +1479,8 @@
       ],
       "video": null
     },
-    "setu-solitaire-a302": {
-      "slug": "setu-solitaire-a302",
+    "setu-solitaire": {
+      "slug": "setu-solitaire",
       "source": "auto",
       "gallery": [
         {
@@ -1576,8 +1576,8 @@
       ],
       "video": null
     },
-    "setu-solitaire-a602": {
-      "slug": "setu-solitaire-a602",
+    "setu-solitaire-chandkheda": {
+      "slug": "setu-solitaire-chandkheda",
       "source": "auto",
       "gallery": [
         {
@@ -1673,8 +1673,8 @@
       ],
       "video": null
     },
-    "skylon-gota-a501": {
-      "slug": "skylon-gota-a501",
+    "skylon-residency": {
+      "slug": "skylon-residency",
       "source": "auto",
       "gallery": [
         {
@@ -1770,8 +1770,8 @@
       ],
       "video": null
     },
-    "sp-nirwana-b1102": {
-      "slug": "sp-nirwana-b1102",
+    "sp-nirwana": {
+      "slug": "sp-nirwana",
       "source": "auto",
       "gallery": [
         {

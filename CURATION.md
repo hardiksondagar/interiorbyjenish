@@ -81,11 +81,11 @@ Previews: `.work/preview/anusthan-bungalow/`
 
 **keep:** 
 
-## Akshat Paradise · F-501
+## Akshat Paradise
 
-`akshat-paradise-f501` · residential · Ahmedabad · 43 candidates
+`akshat-paradise` · residential · Ahmedabad · 43 candidates
 
-Previews: `.work/preview/akshat-paradise-f501/`
+Previews: `.work/preview/akshat-paradise/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -172,11 +172,11 @@ Previews: `.work/preview/amogha-shantigram/`
 
 **keep:** 
 
-## Atharv Abode · A-604
+## Atharv Abode
 
-`atharv-abode-a604` · residential · Ahmedabad · 37 candidates
+`atharv-abode` · residential · Ahmedabad · 37 candidates
 
-Previews: `.work/preview/atharv-abode-a604/`
+Previews: `.work/preview/atharv-abode/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -281,11 +281,11 @@ Previews: `.work/preview/bhagwati-hardware/`
 
 **keep:** 
 
-## Paldi · 402
+## Paldi Residence
 
-`paldi-402` · residential · Paldi · 21 candidates
+`paldi-residence` · residential · Paldi · 21 candidates
 
-Previews: `.work/preview/paldi-402/`
+Previews: `.work/preview/paldi-residence/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -508,11 +508,11 @@ Previews: `.work/preview/krishna-avenue-ghodasar/`
 
 **keep:** 
 
-## Karnavati 7 · 101 & 104
+## Karnavati 7
 
-`karnavati-7-101-104` · residential · Ahmedabad · 150 candidates
+`karnavati-7` · residential · Ahmedabad · 150 candidates
 
-Previews: `.work/preview/karnavati-7-101-104/`
+Previews: `.work/preview/karnavati-7/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -669,11 +669,11 @@ Previews: `.work/preview/karnavati-7-101-104/`
 
 **keep:** 
 
-## Karnavati 7 · B-301
+## Karnavati 7, B Wing
 
-`karnavati-7-b301` · residential · Ahmedabad · 24 candidates
+`karnavati-7-b-wing` · residential · Ahmedabad · 24 candidates
 
-Previews: `.work/preview/karnavati-7-b301/`
+Previews: `.work/preview/karnavati-7-b-wing/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -704,11 +704,11 @@ Previews: `.work/preview/karnavati-7-b301/`
 
 **keep:** 
 
-## Office 434
+## Corporate Office
 
-`office-434` · office · Ahmedabad · 10 candidates
+`corporate-office` · office · Ahmedabad · 10 candidates
 
-Previews: `.work/preview/office-434/`
+Previews: `.work/preview/corporate-office/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -725,11 +725,11 @@ Previews: `.work/preview/office-434/`
 
 **keep:** 
 
-## RR Gandhinagar · B-703
+## RR Gandhinagar
 
-`rr-gandhinagar-b703` · residential · Gandhinagar · 20 candidates
+`rr-gandhinagar` · residential · Gandhinagar · 20 candidates
 
-Previews: `.work/preview/rr-gandhinagar-b703/`
+Previews: `.work/preview/rr-gandhinagar/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -756,11 +756,11 @@ Previews: `.work/preview/rr-gandhinagar-b703/`
 
 **keep:** 
 
-## Setu Solitaire · A-302
+## Setu Solitaire
 
-`setu-solitaire-a302` · residential · Ahmedabad · 28 candidates
+`setu-solitaire` · residential · Ahmedabad · 28 candidates
 
-Previews: `.work/preview/setu-solitaire-a302/`
+Previews: `.work/preview/setu-solitaire/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -795,11 +795,11 @@ Previews: `.work/preview/setu-solitaire-a302/`
 
 **keep:** 
 
-## Setu Solitaire · A-602
+## Setu Solitaire, Chandkheda
 
-`setu-solitaire-a602` · residential · Chandkheda · 16 candidates
+`setu-solitaire-chandkheda` · residential · Chandkheda · 16 candidates
 
-Previews: `.work/preview/setu-solitaire-a602/`
+Previews: `.work/preview/setu-solitaire-chandkheda/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -822,11 +822,11 @@ Previews: `.work/preview/setu-solitaire-a602/`
 
 **keep:** 
 
-## Skylon Residency · A-501
+## Skylon Residency
 
-`skylon-gota-a501` · residential · Gota · 26 candidates
+`skylon-residency` · residential · Gota · 26 candidates
 
-Previews: `.work/preview/skylon-gota-a501/`
+Previews: `.work/preview/skylon-residency/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|
@@ -859,11 +859,11 @@ Previews: `.work/preview/skylon-gota-a501/`
 
 **keep:** 
 
-## SP Nirwana · B-1102
+## SP Nirwana
 
-`sp-nirwana-b1102` · residential · Shela · 24 candidates
+`sp-nirwana` · residential · Shela · 24 candidates
 
-Previews: `.work/preview/sp-nirwana-b1102/`
+Previews: `.work/preview/sp-nirwana/`
 
 | # | px | flag | dupe of | source |
 |---|---|---|---|---|

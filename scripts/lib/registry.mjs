@@ -19,7 +19,7 @@ export const REGISTRY = {
     category: 'residential', type: 'Apartment', locality: 'Shantigram', featured: true,
   },
   'atharv-adobe-a-604': {
-    slug: 'atharv-abode-a604', title: 'Atharv Abode · A-604',
+    slug: 'atharv-abode', title: 'Atharv Abode',
     category: 'residential', type: 'Apartment', locality: 'Ahmedabad',
   },
   'bhagwati-hardware-3': {
@@ -27,7 +27,7 @@ export const REGISTRY = {
     category: 'commercial', type: 'Retail Showroom', locality: 'Ahmedabad',
   },
   'bipinbhai-paldi-402': {
-    slug: 'paldi-402', title: 'Paldi · 402',
+    slug: 'paldi-residence', title: 'Paldi Residence',
     category: 'residential', type: 'Apartment', locality: 'Paldi', client: 'Bipinbhai',
   },
   'bakrol-aegis-stee-cast': {
@@ -48,35 +48,35 @@ export const REGISTRY = {
     category: 'residential', type: 'Apartment', locality: 'Jaipur', city: 'Jaipur',
   },
   'k7-301': {
-    slug: 'karnavati-7-b301', title: 'Karnavati 7 · B-301',
+    slug: 'karnavati-7-b-wing', title: 'Karnavati 7, B Wing',
     category: 'residential', type: 'Apartment', locality: 'Ahmedabad',
   },
   'k7-101-104': {
-    slug: 'karnavati-7-101-104', title: 'Karnavati 7 · 101 & 104',
+    slug: 'karnavati-7', title: 'Karnavati 7',
     category: 'residential', type: '3 BHK Apartments', locality: 'Ahmedabad',
   },
   'office-434': {
-    slug: 'office-434', title: 'Office 434',
-    category: 'office', type: 'Corporate Office', locality: 'Ahmedabad',
+    slug: 'corporate-office', title: 'Corporate Office',
+    category: 'office', type: 'Corporate Office Fit-out', locality: 'Ahmedabad',
   },
   'rr-gandhinagar-b-703': {
-    slug: 'rr-gandhinagar-b703', title: 'RR Gandhinagar · B-703',
+    slug: 'rr-gandhinagar', title: 'RR Gandhinagar',
     category: 'residential', type: 'Apartment', locality: 'Gandhinagar', city: 'Gandhinagar',
   },
   'setu-solitire-a-302': {
-    slug: 'setu-solitaire-a302', title: 'Setu Solitaire · A-302',
+    slug: 'setu-solitaire', title: 'Setu Solitaire',
     category: 'residential', type: 'Apartment', locality: 'Ahmedabad',
   },
   'setu-solitire-chadkheda-a-602': {
-    slug: 'setu-solitaire-a602', title: 'Setu Solitaire · A-602',
+    slug: 'setu-solitaire-chandkheda', title: 'Setu Solitaire, Chandkheda',
     category: 'residential', type: 'Apartment', locality: 'Chandkheda',
   },
   'skylone-gota-a-501': {
-    slug: 'skylon-gota-a501', title: 'Skylon Residency · A-501',
+    slug: 'skylon-residency', title: 'Skylon Residency',
     category: 'residential', type: 'Apartment', locality: 'Gota', featured: true,
   },
   'sp-nirwana-shela-b-1102': {
-    slug: 'sp-nirwana-b1102', title: 'SP Nirwana · B-1102',
+    slug: 'sp-nirwana', title: 'SP Nirwana',
     category: 'residential', type: 'Apartment', locality: 'Shela',
   },
   'super-shaligram': {
@@ -84,14 +84,14 @@ export const REGISTRY = {
     category: 'residential', type: '4 BHK Apartment', locality: 'Ahmedabad', featured: true,
   },
   'akshat-paradise': {
-    slug: 'akshat-paradise-f501', title: 'Akshat Paradise · F-501',
+    slug: 'akshat-paradise', title: 'Akshat Paradise',
     category: 'residential', type: 'Apartment', locality: 'Ahmedabad',
   },
   'jay-bhai-maninagar': {
     // Folder says Maninagar, the file inside says Ghodasar. Ghodasar wins:
     // the filename is more specific and names the scheme (Krishna Avenue).
     // FLAGGED for Jenish to confirm.
-    slug: 'krishna-avenue-ghodasar', title: 'Krishna Avenue · Ghodasar',
+    slug: 'krishna-avenue-ghodasar', title: 'Krishna Avenue, Ghodasar',
     category: 'residential', type: 'Apartment', locality: 'Ghodasar', client: 'Niteshbhai',
   },
   // --- loose files at part root, each its own project ---
