@@ -8,8 +8,8 @@ export const SITE = {
   description:
     'Interior by Jenish designs and delivers turnkey interiors for homes and offices across Ahmedabad — from modular kitchens and wardrobes to complete office fit-outs, resolved in full 3D before work begins.',
 
-  phoneE164: '+919099602735',
-  phoneDisplay: '+91 90996 02735',
+  phoneE164: '+918282820517',
+  phoneDisplay: '+91 82828 20517',
   email: 'interiorbyjenish@gmail.com',
 
   /** Street address, split for schema.org PostalAddress. New Narol is the

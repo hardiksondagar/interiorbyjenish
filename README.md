@@ -25,7 +25,7 @@ All in **`src/lib/site.ts`** — one file feeds the WhatsApp deep links, `tel:`
 and `mailto:` links, the Google Maps link and the LocalBusiness schema:
 
 ```
-+91 90996 02735
++91 82828 20517
 interiorbyjenish@gmail.com
 3 Sharnam Arise, Opp Nakshtra Aspire, Pooja Farm Road,
 New Narol, Ahmedabad 382405
